@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawan Kumar — Branding, Signage & Fabrication Design</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:wght@700;900&family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root{
+  --ink:#0E0E10;
+  --steel:#1A1B1E;
+  --steel-2:#23242A;
+  --orange:#FF6A00;
+  --orange-dim:#CC5500;
+  --blue:#1C4F8C;
+  --warn:#F4B400;
+  --paper:#ECE9E2;
+  --paper-dim:#B9B6AD;
+  --line:#3A3B40;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+}
+.mono{font-family:'JetBrains Mono',monospace;}
+.display{font-family:'Archivo Black',sans-serif;}
+
+/* ---------- DIMENSION LINE DIVIDER (signature element) ---------- */
+.dim-line{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  width:100%;
+  margin:0 auto;
+  padding:0 6vw;
+  color:var(--orange);
+}
+.dim-line .tick{width:1px;height:14px;background:var(--orange);}
+.dim-line .rule{flex:1;height:1px;background:var(--orange);position:relative;}
+.dim-line .label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.12em;
+  white-space:nowrap;
+  color:var(--orange);
+  padding:0 14px;
+}
+
+/* ---------- NAV ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:22px 6vw;
+  background:linear-gradient(to bottom, rgba(14,14,16,0.96), rgba(14,14,16,0));
+  backdrop-filter:blur(6px);
+}
+.logo-mark{
+  font-family:'Archivo Black',sans-serif;
+  font-size:18px;
+  letter-spacing:0.02em;
+  color:var(--paper);
+}
+.logo-mark span{color:var(--orange);}
+nav{display:flex;gap:34px;}
+nav a{
+  color:var(--paper-dim);
+  text-decoration:none;
+  font-size:13px;
+  font-family:'JetBrains Mono',monospace;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  transition:color 0.2s;
+  position:relative;
+}
+nav a:hover{color:var(--orange);}
+nav a::after{
+  content:'';position:absolute;left:0;bottom:-6px;height:2px;width:0;
+  background:var(--orange);transition:width .25s;
+}
+nav a:hover::after{width:100%;}
+.nav-cta{
+  border:1px solid var(--orange);
+  color:var(--orange) !important;
+  padding:8px 16px;
+  font-size:12px;
+}
+.nav-cta::after{display:none;}
+.nav-cta:hover{background:var(--orange);color:var(--ink) !important;}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:140px 6vw 80px;
+  overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute;inset:0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.025) 39px, rgba(255,255,255,0.025) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.025) 39px, rgba(255,255,255,0.025) 40px);
+  z-index:0;
+}
+.hero-grid{
+  position:relative;z-index:2;
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  color:var(--orange);
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+  display:flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:'';width:30px;height:1px;background:var(--orange);}
+.hero h1{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(42px, 6vw, 84px);
+  line-height:0.98;
+  letter-spacing:-0.01em;
+  color:var(--paper);
+  margin-bottom:24px;
+}
+.hero h1 .accent{color:var(--orange);}
+.hero-sub{
+  font-size:18px;
+  color:var(--paper-dim);
+  max-width:540px;
+  line-height:1.6;
+  margin-bottom:36px;
+}
+.hero-stats{
+  display:flex;
+  gap:42px;
+  margin-bottom:40px;
+}
+.stat-num{
+  font-family:'Archivo Black',sans-serif;
+  font-size:38px;
+  color:var(--orange);
+  line-height:1;
+}
+.stat-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  color:var(--paper-dim);
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  margin-top:6px;
+}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-primary{
+  background:var(--orange);
+  color:var(--ink);
+  font-weight:700;
+  padding:15px 30px;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:0.02em;
+  transition:transform .2s, background .2s;
+  display:inline-block;
+}
+.btn-primary:hover{background:#fff;transform:translateY(-2px);}
+.btn-secondary{
+  border:1px solid var(--line);
+  color:var(--paper);
+  padding:15px 30px;
+  text-decoration:none;
+  font-size:14px;
+  transition:border-color .2s, color .2s;
+}
+.btn-secondary:hover{border-color:var(--orange);color:var(--orange);}
+
+.hero-visual{
+  position:relative;
+  border:1px solid var(--line);
+}
+.hero-visual img{width:100%;display:block;filter:saturate(1.05) contrast(1.04);}
+.hero-visual .tag{
+  position:absolute;bottom:0;left:0;
+  background:var(--orange);
+  color:var(--ink);
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  padding:6px 12px;
+  font-weight:700;
+  letter-spacing:0.04em;
+}
+.corner-marks span{
+  position:absolute;width:16px;height:16px;
+  border:2px solid var(--orange);
+}
+.cm-tl{top:-1px;left:-1px;border-right:none;border-bottom:none;}
+.cm-br{bottom:-1px;right:-1px;border-left:none;border-top:none;}
+
+/* ---------- SECTION SHELL ---------- */
+section{padding:110px 6vw;position:relative;}
+.section-head{margin-bottom:60px;max-width:780px;}
+.section-num{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  color:var(--orange);
+  margin-bottom:14px;
+  letter-spacing:0.1em;
+}
+.section-head h2{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(30px,4vw,50px);
+  color:var(--paper);
+  line-height:1.05;
+  margin-bottom:18px;
+}
+.section-head p{
+  color:var(--paper-dim);
+  font-size:16px;
+  line-height:1.7;
+  max-width:620px;
+}
+
+/* ---------- ABOUT ---------- */
+.about{background:var(--steel);}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:start;
+}
+.about-text p{
+  color:var(--paper-dim);
+  font-size:16.5px;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+.about-text strong{color:var(--paper);font-weight:600;}
+.skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;}
+.skill-chip{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  border:1px solid var(--line);
+  color:var(--paper-dim);
+  padding:8px 14px;
+  text-transform:uppercase;
+  letter-spacing:0.03em;
+}
+.timeline{border-left:2px solid var(--line);padding-left:30px;}
+.tl-item{margin-bottom:36px;position:relative;}
+.tl-item::before{
+  content:'';position:absolute;left:-37px;top:5px;
+  width:10px;height:10px;background:var(--orange);
+  border-radius:50%;
+}
+.tl-period{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--orange);margin-bottom:6px;}
+.tl-role{font-family:'Archivo Black',sans-serif;font-size:19px;color:var(--paper);margin-bottom:4px;}
+.tl-co{color:var(--paper-dim);font-size:14px;}
+
+/* ---------- CLIENTS STRIP ---------- */
+.clients-strip{
+  padding:60px 6vw;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:var(--ink);
+}
+.clients-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;color:var(--paper-dim);
+  text-transform:uppercase;letter-spacing:0.1em;
+  margin-bottom:30px;text-align:center;
+}
+.clients-row{
+  display:flex;justify-content:center;align-items:center;
+  gap:50px;flex-wrap:wrap;
+}
+.clients-row img{
+  height:46px;width:auto;
+  filter:grayscale(1) brightness(2) contrast(0.9);
+  opacity:0.75;
+  transition:opacity .25s, filter .25s;
+}
+.clients-row img:hover{opacity:1;filter:none;}
+.clients-row .cert-badge{
+  border:1px solid var(--line);
+  color:var(--paper-dim);
+  padding:10px 16px;
+  opacity:0.85;
+  transition:opacity .25s, border-color .25s, color .25s;
+}
+.clients-row .cert-badge:hover{opacity:1;border-color:var(--orange);color:var(--paper);}
+
+/* ---------- PROJECT CATEGORIES (TABS) ---------- */
+.work{background:var(--ink);}
+.tab-bar{
+  display:flex;gap:6px;margin-bottom:50px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);
+}
+.tab-btn{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  color:var(--paper-dim);
+  background:none;border:none;
+  padding:14px 22px;
+  cursor:pointer;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  position:relative;
+  transition:color .2s;
+}
+.tab-btn.active{color:var(--orange);}
+.tab-btn.active::after{
+  content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--orange);
+}
+.tab-btn:hover{color:var(--paper);}
+
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
+.proj-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:4px;
+}
+.proj-grid.feature-grid{grid-template-columns:2fr 1fr 1fr;}
+.proj-card{
+  position:relative;
+  overflow:hidden;
+  aspect-ratio:4/3;
+  background:var(--steel);
+}
+.proj-grid.feature-grid .proj-card:first-child{
+  grid-row:span 2;
+  aspect-ratio:auto;
+}
+.proj-card img{
+  width:100%;height:100%;object-fit:cover;
+  display:block;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1), filter .4s;
+  filter:saturate(1.05);
+}
+.proj-card:hover img{transform:scale(1.07);}
+.proj-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 40%, rgba(14,14,16,0.92) 100%);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:20px;
+  opacity:0;
+  transition:opacity .3s;
+}
+.proj-card:hover .proj-overlay{opacity:1;}
+.proj-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;color:var(--orange);
+  text-transform:uppercase;letter-spacing:0.08em;
+  margin-bottom:5px;
+}
+.proj-title{
+  font-family:'Archivo Black',sans-serif;
+  font-size:16px;color:var(--paper);
+}
+
+/* ---------- TECHNICAL DRAWING SHOWCASE ---------- */
+.tech{background:var(--steel);}
+.tech-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:30px;
+}
+.tech-main{
+  border:1px solid var(--line);
+  background:#fff;
+  padding:20px;
+}
+.tech-main img{width:100%;display:block;}
+.tech-side{display:flex;flex-direction:column;gap:30px;}
+.tech-card{
+  border:1px solid var(--line);
+  background:var(--ink);
+  padding:18px;
+}
+.tech-card img{width:100%;display:block;background:#fff;}
+.tech-caption{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;color:var(--paper-dim);
+  margin-top:14px;
+  display:flex;justify-content:space-between;
+}
+.tech-caption .v{color:var(--orange);}
+.spec-list{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.spec-item{border-left:2px solid var(--orange);padding-left:14px;}
+.spec-k{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--paper-dim);text-transform:uppercase;letter-spacing:0.06em;}
+.spec-v{font-family:'Archivo Black',sans-serif;font-size:16px;color:var(--paper);margin-top:4px;}
+
+/* ---------- CERTIFICATIONS ---------- */
+.certs{
+  display:flex;gap:16px;flex-wrap:wrap;margin-top:40px;
+}
+.cert-badge{
+  border:1px solid var(--orange);
+  color:var(--orange);
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  padding:10px 18px;
+  letter-spacing:0.03em;
+}
+
+/* ---------- CONTACT ---------- */
+.contact{
+  background:var(--ink);
+  text-align:center;
+  padding:140px 6vw 100px;
+}
+.contact h2{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(34px,5.5vw,64px);
+  color:var(--paper);
+  margin-bottom:24px;
+  line-height:1.05;
+}
+.contact h2 .accent{color:var(--orange);}
+.contact p{
+  color:var(--paper-dim);font-size:17px;
+  max-width:560px;margin:0 auto 50px;
+  line-height:1.7;
+}
+.contact-links{
+  display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:60px;
+}
+.contact-link{
+  border:1px solid var(--line);
+  color:var(--paper);
+  text-decoration:none;
+  padding:16px 28px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  display:flex;align-items:center;gap:10px;
+  transition:border-color .2s, color .2s, background .2s;
+}
+.contact-link:hover{border-color:var(--orange);color:var(--orange);}
+.contact-link.primary{
+  background:var(--orange);border-color:var(--orange);color:var(--ink);
+}
+.contact-link.primary:hover{background:#fff;border-color:#fff;color:var(--ink);}
+.contact-meta{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;color:var(--paper-dim);
+  display:flex;justify-content:center;gap:36px;flex-wrap:wrap;
+}
+.contact-meta span{color:var(--orange);}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 6vw;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;color:var(--paper-dim);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px){
+  header{padding:18px 5vw;}
+  nav{gap:18px;}
+  nav a{font-size:11px;}
+  .hero{padding:120px 5vw 60px;}
+  .hero-grid{grid-template-columns:1fr;gap:40px;}
+  .hero-stats{gap:28px;}
+  .about-grid{grid-template-columns:1fr;gap:40px;}
+  .proj-grid, .proj-grid.feature-grid{grid-template-columns:1fr 1fr;}
+  .proj-grid.feature-grid .proj-card:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:16/9;}
+  .tech-grid{grid-template-columns:1fr;}
+  section{padding:80px 5vw;}
+  .clients-row{gap:28px;}
+  .clients-row img{height:34px;}
+  .spec-list{grid-template-columns:1fr;}
+}
+@media (max-width: 560px){
+  nav{display:none;}
+  .hero h1{font-size:38px;}
+  .proj-grid, .proj-grid.feature-grid{grid-template-columns:1fr;}
+  .proj-grid.feature-grid .proj-card:first-child{grid-column:span 1;}
+  .contact-meta{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <div style="width:42px;height:42px;border:2px solid var(--orange);display:flex;align-items:center;justify-content:center;font-family:'Archivo Black',sans-serif;font-size:16px;flex-shrink:0;">
+      <span style="color:var(--paper);">P</span><span style="color:var(--orange);">K</span>
+    </div>
+    <div>
+      <div class="logo-mark" style="font-size:16px;line-height:1.2;">Pawan Kumar D</div>
+      <div class="mono" style="font-size:11px;color:var(--paper-dim);letter-spacing:0.04em;">Graphic Designer</div>
+    </div>
+  </div>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#technical">Technical</a>
+    <a href="#about">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="Pawan_Kumar_Resume.pdf" class="nav-cta">↓ Download Resume (PDF)</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="padding-bottom:0;">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Graphic Designer · Signage Designer · Branding & Fabrication Specialist</div>
+      <h1>Designing Brands.<br><span class="accent">Delivering Impact.</span></h1>
+      <p class="hero-sub">Graphic Designer with 8+ years of experience in branding, signage systems, fabrication artwork, and large-format visual communication. Turning brand guidelines into impactful real-world experiences.</p>
+      <p class="hero-sub" style="color:var(--paper);font-weight:600;margin-top:-10px;">Currently available for Graphic Designer, Signage Designer, Production Designer, and Branding Executive opportunities in UAE.</p>
+      <div class="hero-stats">
+        <div><div class="stat-num">8+</div><div class="stat-label">Years Experience</div></div>
+        <div><div class="stat-num">50+</div><div class="stat-label">Retail Sites Branded</div></div>
+        <div><div class="stat-num">4</div><div class="stat-label">Major Oil Brands</div></div>
+      </div>
+      <div class="hero-meta mono" style="display:flex;flex-wrap:wrap;gap:22px;margin-bottom:32px;font-size:14px;color:var(--paper-dim);">
+        <span>📍 Abu Dhabi, UAE</span>
+        <span>✉ pawankumard@hotmail.com</span>
+        <span>📱 +971 58 241 6063</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#work" class="btn-primary">View Work →</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="corner-marks"><span class="cm-tl"></span><span class="cm-br"></span></div>
+      <img src="images/p4_hero_indianoil.jpg" alt="IndianOil canopy signage installation">
+      <div class="tag">FIG.01 — CANOPY FASCIA, INDIANOIL</div>
+    </div>
+  </div>
+</section>
+
+<div class="dim-line">
+  <div class="tick"></div><div class="rule"></div>
+  <div class="label">SCALE 1:1 — RETAIL INFRASTRUCTURE PORTFOLIO</div>
+  <div class="rule"></div><div class="tick"></div>
+</div>
+
+<!-- ============ SUMMARY STRIP ============ -->
+<section style="background:var(--steel);padding:70px 6vw;">
+  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:50px;align-items:center;">
+    <div style="text-align:center;">
+      <div style="width:140px;height:140px;border:2px solid var(--orange);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <div class="display" style="font-size:30px;"><span style="color:var(--paper);">P</span><span style="color:var(--orange);">K</span></div>
+        <div class="mono" style="font-size:10px;color:var(--paper-dim);margin-top:6px;text-align:center;">Pawan Kumar D</div>
+      </div>
+    </div>
+    <div>
+      <p style="color:var(--paper-dim);font-size:15.5px;line-height:1.75;margin-bottom:14px;">I am Pawan Kumar D, a passionate Graphic Designer with over 8+ years of experience in signage, retail branding, fabrication drawings, forecourt branding, and large-format advertising projects.</p>
+      <p style="color:var(--paper-dim);font-size:15.5px;line-height:1.75;margin-bottom:14px;">I specialize in converting brand guidelines into production-ready signage systems and installation drawings with accuracy and creativity.</p>
+      <p style="color:var(--paper-dim);font-size:15.5px;line-height:1.75;margin-bottom:26px;">Beyond design, I serve as the key coordination point between clients, the print production department, and dispatch — ensuring accurate handoff from concept through fabrication to final delivery.</p>
+      <a href="Pawan_Kumar_Resume.pdf" class="contact-link primary" style="display:inline-flex;width:fit-content;">↓ Download Resume (PDF)</a>
+    </div>
+    <div class="mono" style="font-size:14.5px;color:var(--paper-dim);display:flex;flex-direction:column;gap:14px;">
+      <div><span style="color:var(--orange);">📍 Location:</span> Abu Dhabi, UAE</div>
+      <div><span style="color:var(--orange);">✉ Email:</span> pawankumard@hotmail.com</div>
+      <div><span style="color:var(--orange);">📱 Phone:</span> +971 58 241 6063</div>
+      <div><span style="color:var(--orange);">📋 Visa Status:</span> Visit Visa — Immediate</div>
+      <div><span style="color:var(--orange);">🌐 Languages:</span> English · Telugu · Hindi</div>
+      <div><span style="color:var(--orange);">🏳 Nationality:</span> Indian</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<div class="clients-strip">
+  <div class="clients-label">Trusted Brands &amp; Clients</div>
+  <div class="clients-row">
+    <img src="images/p19_indianoil_logo.jpg" alt="IndianOil">
+    <img src="images/p19_hp_logo.jpg" alt="HPCL">
+    <img src="images/p19_bpcl_logo.jpg" alt="Bharat Petroleum">
+    <img src="images/p9_raymond.jpg" alt="Raymond" style="height:50px;object-fit:contain;background:#fff;padding:4px 8px;">
+    <span class="cert-badge" style="font-family:'Archivo Black',sans-serif;font-size:13px;">OTTO</span>
+    <span class="cert-badge" style="font-family:'Archivo Black',sans-serif;font-size:13px;">MINISTER WHITE</span>
+    <span class="cert-badge" style="font-family:'Archivo Black',sans-serif;font-size:13px;font-style:italic;">Siyaram's</span>
+    <span class="cert-badge" style="font-family:'Archivo Black',sans-serif;font-size:13px;">TECHNOSPORT</span>
+    <span class="cert-badge" style="font-family:'Archivo Black',sans-serif;font-size:13px;">SERVO</span>
+    <span class="cert-badge" style="font-family:'Archivo Black',sans-serif;font-size:13px;">GOEL TMT</span>
+    <img src="images/p19_havells_logo.jpg" alt="Havells" style="height:42px;object-fit:contain;background:#fff;padding:4px 8px;">
+  </div>
+</div>
+
+<!-- ============ WORK ============ -->
+<section class="work" id="work">
+  <div class="section-head">
+    <div class="section-num">// 01 — SELECTED WORK</div>
+    <h2>Retail Infrastructure<br>& Signage Systems</h2>
+    <p>End-to-end design and production artwork for fuel retail branding — from canopy fascia and monoliths to showroom cladding and exhibition stands, built to client SOPs and fabricated for real-world install.</p>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="t1">Canopy & Fascia</button>
+    <button class="tab-btn" data-tab="t2">Monoliths & Unipoles</button>
+    <button class="tab-btn" data-tab="t3">Showroom Branding</button>
+    <button class="tab-btn" data-tab="t4">Traffic Signage</button>
+    <button class="tab-btn" data-tab="t5">Exhibition Kiosks</button>
+  </div>
+
+  <div class="tab-panel active" id="t1">
+    <div class="proj-grid feature-grid">
+      <div class="proj-card">
+        <img src="images/p8_canopy_hero.jpg" alt="Petrol pump canopy steel fabrication">
+        <div class="proj-overlay"><div class="proj-tag">Fabrication</div><div class="proj-title">Canopy Steel Structure — Pre-Cladding</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p4_nayara_canopy.jpg" alt="Nayara canopy at night">
+        <div class="proj-overlay"><div class="proj-tag">Nayara Energy</div><div class="proj-title">Illuminated Canopy Fascia</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p4_hp_station.jpg" alt="HP fuel station canopy">
+        <div class="proj-overlay"><div class="proj-tag">HP</div><div class="proj-title">Forecourt Canopy Branding</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p8_canopy1.jpg" alt="Canopy fabrication site installed">
+        <div class="proj-overlay"><div class="proj-tag">Fabrication</div><div class="proj-title">Installed Canopy — Site View</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p8_canopy2.jpg" alt="Canopy structural beams">
+        <div class="proj-overlay"><div class="proj-tag">Fabrication</div><div class="proj-title">Structural Beam Assembly</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="t2">
+    <div class="proj-grid feature-grid">
+      <div class="proj-card">
+        <img src="images/p5_monolith_hero.jpg" alt="Petroleum monolith signage range">
+        <div class="proj-overlay"><div class="proj-tag">IndianOil / HP</div><div class="proj-title">LED Monolith Signage Range</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p5_unipole_iocl.jpg" alt="IndianOil unipole signage">
+        <div class="proj-overlay"><div class="proj-tag">IndianOil</div><div class="proj-title">Unipole — Price Display</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p5_unipole_hp.jpg" alt="HP unipole signage at night">
+        <div class="proj-overlay"><div class="proj-tag">HP</div><div class="proj-title">Illuminated Unipole — Night</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p5_unipole_nayara_install.jpg" alt="Nayara unipole installation crane">
+        <div class="proj-overlay"><div class="proj-tag">Nayara — Install</div><div class="proj-title">High Mast Unipole Installation</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p4_iocl_orange.jpg" alt="IndianOil orange canopy">
+        <div class="proj-overlay"><div class="proj-tag">IndianOil</div><div class="proj-title">Brand Colour Canopy System</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="t3">
+    <div class="proj-grid feature-grid">
+      <div class="proj-card">
+        <img src="images/p9_ibo_fascia.jpg" alt="IBO wholesale showroom fascia">
+        <div class="proj-overlay"><div class="proj-tag">IBO Wholesale</div><div class="proj-title">Showroom Fascia & ACP Cladding</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p9_raymond.jpg" alt="Raymond showroom signage">
+        <div class="proj-overlay"><div class="proj-tag">Raymond</div><div class="proj-title">Storefront Signage</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p9_havells.jpg" alt="Havells gallery showroom branding">
+        <div class="proj-overlay"><div class="proj-tag">Havells</div><div class="proj-title">Gallery Storefront Identity</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p9_linenclub.jpg" alt="Linen Club showroom fascia">
+        <div class="proj-overlay"><div class="proj-tag">Linen Club</div><div class="proj-title">Retail Fascia Signage</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p9_lloyd.jpg" alt="Lloyd gallery showroom branding">
+        <div class="proj-overlay"><div class="proj-tag">Lloyd / Havells</div><div class="proj-title">Showroom Launch Branding</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="t4">
+    <div class="proj-grid">
+      <div class="proj-card"><img src="images/p7_traffic1.jpg" alt="Traffic sign"><div class="proj-overlay"><div class="proj-tag">Civic</div><div class="proj-title">Road Safety Signage</div></div></div>
+      <div class="proj-card"><img src="images/p7_traffic2.jpg" alt="Directional sign"><div class="proj-overlay"><div class="proj-tag">Wayfinding</div><div class="proj-title">Directional Road Sign</div></div></div>
+      <div class="proj-card"><img src="images/p7_traffic3.jpg" alt="Highway sign"><div class="proj-overlay"><div class="proj-tag">Highway</div><div class="proj-title">Lane Direction Signage</div></div></div>
+      <div class="proj-card"><img src="images/p7_traffic5.jpg" alt="Regulatory sign panel"><div class="proj-overlay"><div class="proj-tag">Regulatory</div><div class="proj-title">Traffic Rule Panel Set</div></div></div>
+      <div class="proj-card"><img src="images/p7_traffic7.jpg" alt="School zone sign"><div class="proj-overlay"><div class="proj-tag">Safety</div><div class="proj-title">School Zone Signage</div></div></div>
+      <div class="proj-card"><img src="images/p7_traffic9.jpg" alt="Highway distance marker"><div class="proj-overlay"><div class="proj-tag">Highway</div><div class="proj-title">Distance Marker Board</div></div></div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="t5">
+    <div class="proj-grid feature-grid">
+      <div class="proj-card">
+        <img src="images/p11_kiosk_aone.jpg" alt="A-One Gold exhibition kiosk">
+        <div class="proj-overlay"><div class="proj-tag">A-One Gold</div><div class="proj-title">Trade Show Exhibition Stand</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p11_kiosk1.jpg" alt="SK Super Steel kiosk">
+        <div class="proj-overlay"><div class="proj-tag">SK Steel</div><div class="proj-title">Corporate Expo Kiosk</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p11_kiosk2.jpg" alt="Steel exhibition booth">
+        <div class="proj-overlay"><div class="proj-tag">Steel Tech</div><div class="proj-title">Branded Expo Booth</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p11_kiosk_bd.jpg" alt="BD orange exhibition stand">
+        <div class="proj-overlay"><div class="proj-tag">BD</div><div class="proj-title">Modular Exhibition Structure</div></div>
+      </div>
+      <div class="proj-card">
+        <img src="images/p11_kiosk3.jpg" alt="Exhibition kiosk red theme">
+        <div class="proj-overlay"><div class="proj-tag">Expo</div><div class="proj-title">Trade Fair Display Unit</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dim-line">
+  <div class="tick"></div><div class="rule"></div>
+  <div class="label">ISSUED FOR TENDER — TECHNICAL DOCUMENTATION</div>
+  <div class="rule"></div><div class="tick"></div>
+</div>
+
+<!-- ============ TECHNICAL ============ -->
+<section class="tech" id="technical">
+  <div class="section-head">
+    <div class="section-num">// 02 — TECHNICAL ARTWORK</div>
+    <h2>Layout to Fabrication<br>Drawing Standards</h2>
+    <p>I design production-ready layouts to client engineering standards — working directly from EPCM specifications (Meinhardt, IOCL) through to dimensioned fabrication drawings, material call-outs, and Pantone-accurate colour separation.</p>
+  </div>
+
+  <div class="tech-grid">
+    <div class="tech-main">
+      <img src="images/tech_swagat_fascia_layout.jpg" alt="SWAGAT IndianOil fascia technical layout drawing">
+    </div>
+    <div class="tech-side">
+      <div class="tech-card">
+        <img src="images/tech_iocl_bay_3d.jpg" alt="IOCL bay signage 3D render">
+        <div class="tech-caption">
+          <span>IOCL-AA-CS-STD-266C</span>
+          <span class="v">BAY SIGNAGE</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="images/tech_stop_sign_3d.jpg" alt="Stop fuelling in progress sign 3D render">
+        <div class="tech-caption">
+          <span>MOBILE STOP SIGN</span>
+          <span class="v">SHEET 09/10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-list">
+    <div class="spec-item">
+      <div class="spec-k">Drawing Standard</div>
+      <div class="spec-v">Client EPCM Spec (Meinhardt / IOCL)</div>
+    </div>
+    <div class="spec-item">
+      <div class="spec-k">Colour Accuracy</div>
+      <div class="spec-v">Pantone-Matched, CMYK Separation</div>
+    </div>
+    <div class="spec-item">
+      <div class="spec-k">Materials Specified</div>
+      <div class="spec-v">3mm ACM, SS Tube, Retro-Reflective Vinyl</div>
+    </div>
+    <div class="spec-item">
+      <div class="spec-k">Output Format</div>
+      <div class="spec-v">Issued-for-Tender, Site-Ready Layouts</div>
+    </div>
+  </div>
+
+  <div class="certs">
+    <div class="cert-badge">ISO 9001:2015 CERTIFIED WORKSHOP</div>
+    <div class="cert-badge">MSME ZED CERTIFIED</div>
+    <div class="cert-badge">UDYAM REGISTERED MANUFACTURER</div>
+  </div>
+</section>
+
+<div class="dim-line">
+  <div class="tick"></div><div class="rule"></div>
+  <div class="label">CAREER TIMELINE — 2009 TO PRESENT</div>
+  <div class="rule"></div><div class="tick"></div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-head">
+    <div class="section-num">// 03 — EXPERIENCE</div>
+    <h2>From Forecourt Signage<br>to Full Brand Systems</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p><strong>I design for the real world, not just the screen.</strong> Eight years of building branding systems for petroleum retail networks taught me to think in fabrication tolerances, material specs, and install constraints — not just layouts. Every canopy, monolith, and showroom fascia I've designed has had to survive weather, vendors, and site conditions.</p>
+      <p>At Ambujam Advertising, I work directly from client engineering documents — IOCL and EPCM-issued drawings — translating technical specifications into production-ready artwork: correct bleeds, Pantone-matched colour, and material call-outs that fabrication teams can build from without guesswork.</p>
+      <p>I've coordinated branding rollouts across <strong>50+ retail locations</strong> for IndianOil, HP, Bharat Petroleum, and Nayara — managing the full lifecycle from concept through client approval, print production, and dispatch, to final on-site installation.</p>
+      <div class="skills-list">
+        <span class="skill-chip">Adobe Illustrator</span>
+        <span class="skill-chip">Photoshop</span>
+        <span class="skill-chip">CorelDRAW</span>
+        <span class="skill-chip">Figma</span>
+        <span class="skill-chip">Production Artwork</span>
+        <span class="skill-chip">ACP / ACM Fabrication</span>
+        <span class="skill-chip">Signage Design</span>
+        <span class="skill-chip">Large Format Print</span>
+        <span class="skill-chip">Vendor Coordination</span>
+        <span class="skill-chip">Client & Dispatch Coordination</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-period">OCT 2018 — PRESENT</div>
+        <div class="tl-role">Senior Graphic Designer</div>
+        <div class="tl-co">Ambujam Advertising LLC — Retail Infrastructure (HPCL, IOCL), ACP / MS Structures & Signage</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">FEB 2016 — OCT 2018</div>
+        <div class="tl-role">Web Designer & Digital Marketing</div>
+        <div class="tl-co">Freelance — WordPress, SEO, Brand Identity</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">AUG 2009 — JAN 2016</div>
+        <div class="tl-role">Floor Sales In-Charge</div>
+        <div class="tl-co">Mahalakshmi Enterprises — Airtel Franchise</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="eyebrow" style="justify-content:center;">Available Immediately — Abu Dhabi, UAE</div>
+  <h2>Let's build your next<br><span class="accent">brand rollout.</span></h2>
+  <p>Currently based in Abu Dhabi on a Visit Visa, open to graphic design, branding, and signage production roles across the UAE.</p>
+  <div class="contact-links">
+    <a href="mailto:pawankumard@hotmail.com" class="contact-link primary">✉ pawankumard@hotmail.com</a>
+    <a href="tel:+971582416063" class="contact-link">📱 +971 58 241 6063</a>
+    <a href="https://www.linkedin.com/in/pawankumardholli" class="contact-link">in/pawankumardholli</a>
+    <a href="https://www.behance.net/6fa75a2d" class="contact-link">Behance Portfolio</a>
+  </div>
+  <div class="contact-meta">
+    <div>Nationality <span>Indian</span></div>
+    <div>Languages <span>English · Telugu · Hindi</span></div>
+    <div>Visa Status <span>Visit Visa — Immediate</span></div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 D. Pawan Kumar — Graphic Designer</div>
+  <div>BUILT FOR DUBAI & ABU DHABI · UAE</div>
+</footer>
+
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
