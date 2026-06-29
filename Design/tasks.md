@@ -28,17 +28,22 @@
 - [x] Technical Drawing Showcase (`TechShowcase.tsx`)
   - [x] Split-screen view linking SWAGAT IOCL layout to 3D renders.
   - [x] Specifications grid (Meinhardt/IOCL spec, Pantone separation, 3mm ACM/SS specifications).
-  - [x] Workshop certificates/badges (ISO 9001:2015, MSME ZED).
+  - [x] Custom designer capability credentials (SOP Compliance, Color Separation, Vehicle Wrap, Handoff).
 - [x] Experience Timeline (`ExperienceTimeline.tsx`)
   - [x] Senior Graphic Designer at Ambujam LLC (Oct 2018 - Present).
   - [x] Freelance Web Designer & Digital Marketing (Feb 2016 - Oct 2018).
   - [x] Floor Sales In-Charge at Mahalakshmi Airtel Franchise (Aug 2009 - Jan 2016).
 - [x] Contact Node & Footer
   - [x] Available Immediately status & location (Abu Dhabi, UAE).
-  - [x] Connectivity: Email, Phone, LinkedIn, Behance.
-  - [x] Modern blueprint-style footer.
+  - [x] Connectivity: Email, Phone, LinkedIn.
+  - [x] Modern blueprint-style footer with "Concept · Fabrication · Site Installation" tag.
 
 ## Quality & Optimization
 - [x] Production build compile testing (`npm run build`).
 - [x] Layout responsiveness verification across desktop and mobile.
 - [x] Smooth interactive transitions verification (tab switching, scroll animations).
+
+## Deployment & Version Control
+- [x] Download and extract portable MinGit environment (due to local Git missing).
+- [x] Initialize Git repository locally and configure user attributes.
+- [x] Stage and commit all project files (`Initial commit`).
