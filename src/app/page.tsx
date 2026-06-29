@@ -385,10 +385,10 @@ export default function Page() {
               // 02 — TECHNICAL ARTWORK
             </div>
             <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-              Layout to Fabrication<br />Drawing Standards
+              Site Layouts &<br />Panel Arrangements
             </h2>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-              I design production-ready layouts to client engineering standards — working directly from EPCM specifications (Meinhardt, IOCL) through to dimensioned fabrication drawings, material call-outs, and Pantone-accurate colour separation.
+              I translate client-approved layouts (like IOCL standards) into detailed, production-ready signage and sheet arrangement plans. I calculate exact panel divisions (such as ACM fascia splits), sheet counts, and directional signage placements to provide the fabrication and production departments with a clear, error-free view for manufacturing.
             </p>
           </div>
 

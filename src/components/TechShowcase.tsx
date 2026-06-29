@@ -2,10 +2,10 @@ import React from 'react';
 import CornerFrame from './CornerFrame';
 
 const SPECS = [
-  { k: 'Drawing Standard', v: 'Client EPCM Spec (Meinhardt / IOCL)' },
+  { k: 'Design Standard', v: 'IOCL Brand SOP Compliance' },
   { k: 'Colour Accuracy', v: 'Pantone-Matched, CMYK Separation' },
   { k: 'Materials Specified', v: '3mm ACM, SS Tube, Retro-Reflective Vinyl' },
-  { k: 'Output Format', v: 'Issued-for-Tender, Site-Ready Layouts' },
+  { k: 'Output Format', v: 'Production-Ready ACM Panel Arrangements' },
 ];
 
 const CERTS = [
