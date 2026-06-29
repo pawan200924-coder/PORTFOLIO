@@ -12,7 +12,7 @@ const TIMELINE_ITEMS: TimelineItem[] = [
     period: 'OCT 2018 — PRESENT',
     role: 'Senior Graphic Designer',
     company: 'Ambujam Advertising LLC — Retail Infrastructure (HPCL, IOCL), ACP / MS Structures & Signage',
-    description: 'Managing full project lifecycles from concept through EPCM specifications to print production and fabrication handoff. Key coordination point between clients, production, and dispatch.',
+    description: 'Preparing site layouts and production-ready ACM sheet arrangement plans compliant with brand standards. Key coordination point between clients, fabrication/production teams, and dispatch.',
   },
   {
     period: 'FEB 2016 — OCT 2018',

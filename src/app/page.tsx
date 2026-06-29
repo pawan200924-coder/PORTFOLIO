@@ -301,7 +301,7 @@ export default function Page() {
                   Forecourt & Fuel Retail
                 </h3>
                 <p className="text-paper-dim text-xs leading-relaxed mb-6">
-                  Artwork design and engineering sheet layouts for fuel retail canopy fascias, LED monolith structures, unipoles, and forecourt branding to client specifications.
+                  Artwork design and panel arrangement sheet layouts for fuel retail canopy fascias, LED monolith structures, unipoles, and forecourt branding to brand standard specifications.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-4 border-t border-line/30 pt-5">
@@ -419,7 +419,7 @@ export default function Page() {
               <strong>I design for the real world, not just the screen.</strong> Eight years of building branding systems for petroleum retail networks taught me to think in fabrication tolerances, material specs, and install constraints — not just layouts. Every canopy, monolith, and showroom fascia I&apos;ve designed has had to survive weather, vendors, and site conditions.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-8">
-              At Ambujam Advertising, I work directly from client engineering documents — IOCL and EPCM-issued drawings — translating technical specifications into production-ready artwork: correct bleeds, Pantone-matched colour, and material call-outs that fabrication teams can build from without guesswork.
+              At Ambujam Advertising, I work with client-approved templates and brand guidelines—such as IOCL standards—translating site layouts into production-ready signage and sheet arrangements. I calculate exact panel divisions, sheet counts, and placements so that the fabrication and production teams can assemble everything without errors.
             </p>
 
             <div className="flex flex-wrap gap-2">
