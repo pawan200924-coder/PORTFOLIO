@@ -12,7 +12,7 @@ const TIMELINE_ITEMS: TimelineItem[] = [
     period: '2026 — PRESENT',
     role: 'Graphic Designer & Print Machine Operator',
     company: 'Ash & Sims Advertising LLC — Dubai, UAE',
-    description: 'Designing brand collateral and operating large-format printing machinery. Responsible for production-ready artwork preparation, color management, machine operation, and print quality control.',
+    description: 'Leading design and printing operations for large-format projects. Designing vehicle branding wraps, retail kiosks, exhibition stands, banners, and flags. Operating flatbed and roll-to-roll digital print machinery, managing CMYK/Pantone color matching, and supervising final print quality control.',
   },
   {
     period: 'OCT 2018 — 2026',

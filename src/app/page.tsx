@@ -275,6 +275,9 @@ export default function Page() {
               <span className="text-orange-brand font-semibold">💼 Current Role:</span> Graphic Designer & Print Operator at Ash & Sims Advertising
             </div>
             <div>
+              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> Work Visa
+            </div>
+            <div>
               <span className="text-orange-brand font-semibold">🌐 Languages:</span> English · Telugu · Hindi
             </div>
             <div>
@@ -492,7 +495,7 @@ export default function Page() {
             Languages <span className="text-orange-brand">English · Telugu · Hindi</span>
           </div>
           <div>
-            Visa Status <span className="text-orange-brand">Visit Visa — Immediate</span>
+            Visa Status <span className="text-orange-brand">Work Visa</span>
           </div>
         </div>
       </section>
