@@ -9,7 +9,13 @@ interface TimelineItem {
 
 const TIMELINE_ITEMS: TimelineItem[] = [
   {
-    period: 'OCT 2018 — PRESENT',
+    period: '2026 — PRESENT',
+    role: 'Graphic Designer & Print Machine Operator',
+    company: 'Ash & Sims Advertising LLC — Dubai, UAE',
+    description: 'Designing brand collateral and operating large-format printing machinery. Responsible for production-ready artwork preparation, color management, machine operation, and print quality control.',
+  },
+  {
+    period: 'OCT 2018 — 2026',
     role: 'Senior Graphic Designer',
     company: 'Ambujam Advertising LLC — Retail Infrastructure (HPCL, IOCL), ACP / MS Structures & Signage',
     description: 'Preparing site layouts and production-ready ACM sheet arrangement plans compliant with brand standards. Key coordination point between clients, fabrication/production teams, and dispatch.',

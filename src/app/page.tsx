@@ -159,9 +159,9 @@ export default function Page() {
               Graphic Designer with 8+ years of experience in branding, signage systems, fabrication artwork, and large-format visual communication. Turning brand guidelines into impactful real-world experiences.
             </p>
 
-            {/* Availability */}
+            {/* Current Role */}
             <p className="text-paper text-sm font-semibold mb-8 max-w-lg border-l border-orange-brand/30 pl-4 py-1">
-              Currently available in the UAE for Graphic Designer, Signage Designer, Production Designer, and Branding Executive opportunities. Immediate join (Visit Visa).
+              Currently working as a Graphic Designer & Print Machine Operator at Ash & Sims Advertising LLC in Dubai, UAE.
             </p>
 
             {/* Stats row */}
@@ -182,7 +182,7 @@ export default function Page() {
 
             {/* Hero Quick Meta */}
             <div className="font-mono text-xs text-paper-dim flex flex-wrap gap-x-6 gap-y-2 mb-10">
-              <span>📍 Abu Dhabi, UAE</span>
+              <span>📍 Dubai, UAE</span>
               <span>✉ pawankumard@hotmail.com</span>
               <span>📱 +971 58 241 6063</span>
             </div>
@@ -263,7 +263,7 @@ export default function Page() {
           {/* Fact Sheet block */}
           <div className="bg-ink border border-line p-6 font-mono text-xs md:text-sm text-paper-dim flex flex-col gap-3.5">
             <div>
-              <span className="text-orange-brand font-semibold">📍 Location:</span> Abu Dhabi, UAE
+              <span className="text-orange-brand font-semibold">📍 Location:</span> Dubai, UAE
             </div>
             <div>
               <span className="text-orange-brand font-semibold">✉ Email:</span> pawankumard@hotmail.com
@@ -272,7 +272,7 @@ export default function Page() {
               <span className="text-orange-brand font-semibold">📱 Phone:</span> +971 58 241 6063
             </div>
             <div>
-              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> Visit Visa — Immediate
+              <span className="text-orange-brand font-semibold">💼 Current Role:</span> Graphic Designer & Print Operator at Ash & Sims Advertising
             </div>
             <div>
               <span className="text-orange-brand font-semibold">🌐 Languages:</span> English · Telugu · Hindi
@@ -445,7 +445,7 @@ export default function Page() {
       <section className="border-t border-line py-28 px-[6vw] bg-ink text-center max-w-7xl mx-auto" id="contact">
         <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-6 flex justify-center items-center gap-3 select-none">
           <span className="w-4 h-[1px] bg-orange-brand" />
-          Available Immediately — Abu Dhabi, UAE
+          Dubai, UAE
           <span className="w-4 h-[1px] bg-orange-brand" />
         </div>
         
@@ -455,7 +455,7 @@ export default function Page() {
         </h2>
 
         <p className="text-paper-dim text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-12">
-          Currently based in Abu Dhabi on a Visit Visa, open to graphic design, branding, and signage production roles across the UAE.
+          Currently based and working in Dubai, UAE. Open to connecting on brand rollout projects, large-format print queries, and signage designs.
         </p>
 
         {/* Contact Links */}
