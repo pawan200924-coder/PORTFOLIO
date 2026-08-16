@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Pawan Kumar D — Senior Branding, Signage & Fabrication Designer",
-  description: "Senior Graphic & Signage Designer with 8+ years of experience in retail branding, brand SOP compliance, panel arrangement planning, fabrication artwork, and large-format visual communication. Available immediately in the UAE.",
+  description: "Senior Graphic & Signage Designer with 8+ years of experience in retail branding, brand SOP compliance, large-format print operations, and vehicle wraps. Open to opportunities in New Zealand.",
 };
 
 export default function RootLayout({
