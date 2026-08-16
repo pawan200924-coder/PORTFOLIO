@@ -32,18 +32,6 @@ const CATEGORIES: Category[] = [
   },
   {
     id: 't2',
-    name: 'Signage',
-    isFeatureLayout: true,
-    projects: [
-      { title: 'LED Monolith Signage Range', tag: 'IndianOil / HP', image: '/images/p5_monolith_hero.jpg' },
-      { title: 'Illuminated Unipole Price Display', tag: 'HP', image: '/images/p5_unipole_hp.jpg' },
-      { title: 'High Mast Unipole Installation', tag: 'Nayara', image: '/images/p5_unipole_nayara_install.jpg' },
-      { title: 'Road Safety & Civic Signage', tag: 'Civic', image: '/images/p7_traffic1.jpg' },
-      { title: 'Unipole Price Display', tag: 'IndianOil', image: '/images/p5_unipole_iocl.jpg' },
-    ],
-  },
-  {
-    id: 't3',
     name: 'Vehicle Graphics',
     isFeatureLayout: false,
     projects: [
@@ -53,8 +41,19 @@ const CATEGORIES: Category[] = [
     ],
   },
   {
+    id: 't3',
+    name: 'Signage & Large Format',
+    isFeatureLayout: true,
+    projects: [
+      { title: 'Illuminated Canopy Fascia', tag: 'Nayara Energy', image: '/images/p4_nayara_canopy.jpg' },
+      { title: 'Road Safety & Civic Signage', tag: 'Civic', image: '/images/p7_traffic1.jpg' },
+      { title: 'Directional Road Sign', tag: 'Wayfinding', image: '/images/p7_traffic2.jpg' },
+      { title: 'Lane Direction Signage', tag: 'Highway', image: '/images/p7_traffic3.jpg' },
+    ],
+  },
+  {
     id: 't4',
-    name: 'Branding & Retail',
+    name: 'Retail & Branding',
     isFeatureLayout: true,
     projects: [
       { title: 'Showroom Fascia & ACP Cladding', tag: 'IBO Wholesale', image: '/images/p9_ibo_fascia.jpg' },
@@ -66,12 +65,24 @@ const CATEGORIES: Category[] = [
   },
   {
     id: 't5',
-    name: 'Prepress & Technical',
+    name: 'Prepress & Production Artwork',
     isFeatureLayout: false,
     projects: [
       { title: 'SWAGAT Fascia ACM Division Sheet', tag: 'Prepress / Panel Splits', image: '/images/tech_swagat_fascia_layout.jpg' },
       { title: 'IOCL Signage Bay 3D Setup', tag: '3D Layout Verification', image: '/images/tech_iocl_bay_3d.jpg' },
       { title: 'Mobile Stop Sign Fabrication Layout', tag: 'Production-ready DWG', image: '/images/tech_stop_sign_3d.jpg' },
+    ],
+  },
+  {
+    id: 't6',
+    name: 'Specialist / Forecourt Branding',
+    isFeatureLayout: true,
+    projects: [
+      { title: 'LED Monolith Signage Range', tag: 'IndianOil / HP', image: '/images/p5_monolith_hero.jpg' },
+      { title: 'Illuminated Unipole Price Display', tag: 'HP', image: '/images/p5_unipole_hp.jpg' },
+      { title: 'High Mast Unipole Installation', tag: 'Nayara', image: '/images/p5_unipole_nayara_install.jpg' },
+      { title: 'Unipole Price Display', tag: 'IndianOil', image: '/images/p5_unipole_iocl.jpg' },
+      { title: 'Brand Colour Canopy System', tag: 'IndianOil', image: '/images/p4_iocl_orange.jpg' },
     ],
   },
 ];

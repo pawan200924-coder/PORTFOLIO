@@ -19,8 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pawan Kumar D — Senior Branding, Signage & Fabrication Designer",
-  description: "Senior Graphic & Signage Designer with 8+ years of experience in retail branding, brand SOP compliance, large-format print operations, and vehicle wraps. Open to opportunities in New Zealand.",
+  title: "Pawan Kumar | Graphic Designer | Print, Prepress & Signage Production",
+  description: "Graphic Designer and Print Production Specialist with 8+ years of experience in signage, prepress, large-format printing, vehicle graphics and production artwork. Based in Dubai and open to New Zealand opportunities.",
 };
 
 export default function RootLayout({

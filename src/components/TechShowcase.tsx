@@ -23,7 +23,7 @@ export default function TechShowcase() {
         {/* Left Side: Main Technical Layout (SWAGAT IOCL) */}
         <div className="flex flex-col">
           <div className="font-mono text-xs text-orange-brand tracking-widest mb-2 uppercase">
-            // DWG.01 — SWAGAT FASCIA SPECIFICATION SHEET
+            SWAGAT FASCIA SPECIFICATION SHEET
           </div>
           <CornerFrame className="bg-white p-4 h-full flex items-center justify-center">
             <img
@@ -39,7 +39,7 @@ export default function TechShowcase() {
           {/* Render 1 */}
           <div className="flex flex-col">
             <div className="font-mono text-xs text-orange-brand tracking-widest mb-2 uppercase">
-              // DWG.02 — 3D RETAIL MODELING
+              3D RETAIL MODELING
             </div>
             <CornerFrame className="bg-ink p-4 flex flex-col gap-3">
               <div className="bg-white p-2 flex items-center justify-center">
@@ -59,7 +59,7 @@ export default function TechShowcase() {
           {/* Render 2 */}
           <div className="flex flex-col">
             <div className="font-mono text-xs text-orange-brand tracking-widest mb-2 uppercase">
-              // DWG.03 — MOBILITY FABRICATION RENDER
+              MOBILITY FABRICATION RENDER
             </div>
             <CornerFrame className="bg-ink p-4 flex flex-col gap-3">
               <div className="bg-white p-2 flex items-center justify-center">

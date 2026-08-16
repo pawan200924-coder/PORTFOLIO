@@ -49,7 +49,11 @@ export default function Page() {
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
             </a>
             <a href="#technical" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
-              Technical
+              Prepress
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
+            </a>
+            <a href="#workflow" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
+              Workflow
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
             </a>
             <a href="#experience" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
@@ -65,7 +69,7 @@ export default function Page() {
               download
               className="border border-orange-brand text-orange-brand px-4 py-2 font-mono text-[11px] uppercase tracking-wider transition-all duration-200 hover:bg-orange-brand hover:text-ink hover:scale-[1.02]"
             >
-              ↓ Resume (PDF)
+              ↓ CV (PDF)
             </a>
           </nav>
 
@@ -104,7 +108,14 @@ export default function Page() {
               onClick={toggleMobileMenu}
               className="font-display text-2xl uppercase tracking-wider text-paper hover:text-orange-brand transition-colors"
             >
-              Technical
+              Prepress
+            </a>
+            <a
+              href="#workflow"
+              onClick={toggleMobileMenu}
+              className="font-display text-2xl uppercase tracking-wider text-paper hover:text-orange-brand transition-colors"
+            >
+              Workflow
             </a>
             <a
               href="#experience"
@@ -126,7 +137,7 @@ export default function Page() {
               onClick={toggleMobileMenu}
               className="border border-orange-brand text-orange-brand px-6 py-3 font-mono text-xs uppercase tracking-widest mt-4"
             >
-              ↓ Download Resume (PDF)
+              ↓ Download CV (PDF)
             </a>
           </motion.div>
         )}
@@ -155,7 +166,7 @@ export default function Page() {
 
             {/* Current Relocation Target */}
             <p className="text-paper text-sm font-semibold mb-8 max-w-lg border-l border-orange-brand/30 pl-4 py-1">
-              Currently based and working in Dubai, UAE
+              Currently based in Dubai, UAE | Open to relocating to New Zealand
             </p>
 
             {/* Stats row */}
@@ -264,7 +275,7 @@ export default function Page() {
           {/* Fact Sheet block */}
           <div className="bg-ink border border-line p-6 font-mono text-xs md:text-sm text-paper-dim flex flex-col gap-3.5">
             <div>
-              <span className="text-orange-brand font-semibold">📍 Location:</span> Dubai, UAE
+              <span className="text-orange-brand font-semibold">📍 Location:</span> Dubai, UAE (Open to New Zealand Relocation)
             </div>
             <div>
               <span className="text-orange-brand font-semibold">✉ Email:</span> pawankumard@hotmail.com
@@ -274,9 +285,6 @@ export default function Page() {
             </div>
             <div>
               <span className="text-orange-brand font-semibold">💼 Current Role:</span> Graphic Designer &amp; Print Operator
-            </div>
-            <div>
-              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> UAE Work Visa
             </div>
             <div>
               <span className="text-orange-brand font-semibold">🌐 Languages:</span> English · Telugu · Hindi
@@ -407,10 +415,10 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-14 max-w-2xl">
             <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-              // 02 — TECHNICAL ARTWORK
+              // 02 — PREPRESS & PRODUCTION ARTWORK
             </div>
             <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-              Site Layouts &<br />Panel Arrangements
+              Prepress &amp; Production Artwork
             </h2>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed">
               I translate client-approved layouts (like IOCL standards) into detailed, production-ready signage and sheet arrangement plans. I calculate exact panel divisions (such as ACM fascia splits), sheet counts, and directional signage placements to provide the fabrication and production departments with a clear, error-free view for manufacturing.
@@ -419,6 +427,44 @@ export default function Page() {
 
           {/* Split display component */}
           <TechShowcase />
+        </div>
+      </section>
+
+      {/* Divider */}
+      <DimensionLine label="Workflow &amp; Production Methodology" />
+
+      {/* ============ HOW I WORK SECTION ============ */}
+      <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="workflow">
+        <div className="mb-14 max-w-2xl">
+          <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
+            // 03 — WORKFLOW METHODOLOGY
+          </div>
+          <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
+            I Design for the Real World
+          </h2>
+          <p className="text-paper-dim text-sm md:text-base leading-relaxed">
+            I design for physical production, not just the screen. Every layout is developed with strict adherence to material properties, fabrication tolerances, print margins, and install specifications.
+          </p>
+        </div>
+
+        {/* Visual Workflow Steps */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative select-none">
+          {[
+            { step: '01', title: 'Brief', desc: 'Understanding client dimensions, brand guidelines, and site constraints.' },
+            { step: '02', title: 'Design', desc: 'Developing creative layouts in scale using Illustrator, Photoshop, or CorelDRAW.' },
+            { step: '03', title: 'Prepress', desc: 'Executing file checks, CMYK/Pantone matching, bleeds, margins, and panel splits.' },
+            { step: '04', title: 'Print', desc: 'Configuring color profiles and printing on flatbed or roll-to-roll plotters.' },
+            { step: '05', title: 'Finishing', desc: 'Overseeing vinyl weed, edge trimming, ACM sheet cuts, and quality control checks.' },
+            { step: '06', title: 'Final Output', desc: 'Delivering fabrication-ready signage and prints exactly matching the design specs.' }
+          ].map((item) => (
+            <div key={item.step} className="border border-line bg-steel-1 p-5 flex flex-col justify-between min-h-[165px]">
+              <div>
+                <span className="font-mono text-xs text-orange-brand font-bold">{item.step}</span>
+                <h3 className="font-display text-xs text-paper uppercase mt-2 mb-3 leading-tight">{item.title}</h3>
+              </div>
+              <p className="font-sans text-[10px] text-paper-dim leading-normal">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -489,7 +535,7 @@ export default function Page() {
         </h2>
 
         <p className="text-paper-dim text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-12">
-          Currently based and working in Dubai, UAE. Open to connecting on print production, signage, and branding projects.
+          Currently based in Dubai, UAE | Open to relocating to New Zealand. Open to connecting on print production, signage, and branding projects.
         </p>
 
         {/* Contact Links */}
@@ -517,17 +563,9 @@ export default function Page() {
 
         </div>
 
-        {/* Quick Facts Footer */}
-        <div className="flex flex-wrap justify-center gap-x-12 gap-y-3 font-mono text-xs text-paper-dim">
-          <div>
-            Nationality <span className="text-orange-brand">Indian</span>
-          </div>
-          <div>
-            Languages <span className="text-orange-brand">English · Telugu · Hindi</span>
-          </div>
-          <div>
-            Visa Status <span className="text-orange-brand">Work Visa</span>
-          </div>
+        {/* Relocation Info */}
+        <div className="font-mono text-xs text-paper-dim mb-4">
+          Open to New Zealand opportunities and relocation
         </div>
       </section>
 
@@ -537,7 +575,7 @@ export default function Page() {
           © 2026 D. Pawan Kumar — Graphic Designer
         </div>
         <div className="tracking-wider uppercase text-orange-brand/80">
-          Concept · Fabrication · Site Installation
+          Design &rarr; Prepress &rarr; Print &rarr; Finishing
         </div>
       </footer>
     </div>
