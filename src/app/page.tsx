@@ -13,18 +13,12 @@ export default function Page() {
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  const skills = [
-    'Adobe Illustrator',
-    'Photoshop',
-    'CorelDRAW',
-    'Figma',
-    'Production Artwork',
-    'ACP / ACM Fabrication',
-    'Signage Design',
-    'Large Format Print',
-    'Vendor Coordination',
-    'Client & Dispatch Coordination',
-  ];
+  const skillsGrouped = {
+    Design: ['Adobe Illustrator', 'Adobe Photoshop', 'CorelDRAW', 'Figma'],
+    Prepress: ['Print-Ready Artwork', 'CMYK Separation', 'Colour Specifications', 'Large-Format Preflight', 'Production File Preparation'],
+    Production: ['Large-Format Printing', 'Digital Print Production', 'Print Quality Control', 'Production Artwork', 'Print Finishing'],
+    Signage: ['Retail Signage Layouts', 'Vehicle Wraps & Decals', 'ACM/ACP Panel Splits', 'Wayfinding & Exhibition Graphics'],
+  };
 
   return (
     <div className="bg-ink min-h-screen text-paper selection:bg-orange-brand selection:text-ink font-sans">
@@ -142,26 +136,26 @@ export default function Page() {
       <section className="relative min-h-screen flex flex-col justify-center blueprint-grid pt-32 pb-16 px-[6vw] max-w-7xl mx-auto overflow-hidden select-none">
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center relative z-10">
           <div>
-            {/* Eyebrow */}
+            {/* Eyebrow / Workflow */}
             <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-5 flex items-center gap-3">
               <span className="w-8 h-[1px] bg-orange-brand block" />
-              <span>Graphic Designer · Signage Designer · Branding</span>
+              <span>Design &rarr; Prepress &rarr; Print &rarr; Finishing &rarr; Delivery</span>
             </div>
             
             {/* Title */}
-            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] text-paper mb-6">
-              Designing Brands.<br />
-              <span className="text-orange-brand">Delivering Impact.</span>
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.0] text-paper mb-6 uppercase">
+              Graphic Designer <br />
+              <span className="text-orange-brand">&amp; Print, Prepress &amp; Signage Production Specialist</span>
             </h1>
 
             {/* Subtext */}
             <p className="text-paper-dim text-sm md:text-base max-w-lg leading-relaxed mb-6">
-              Graphic Designer with 8+ years of experience in branding, signage systems, fabrication artwork, and large-format visual communication. Turning brand guidelines into impactful real-world experiences.
+              8+ years of experience across graphic design, prepress, large-format printing, signage, vehicle graphics and production artwork.
             </p>
 
-            {/* Current Role & Relocation */}
+            {/* Current Relocation Target */}
             <p className="text-paper text-sm font-semibold mb-8 max-w-lg border-l border-orange-brand/30 pl-4 py-1">
-              Currently working as a Graphic Designer & Print Machine Operator in Dubai, UAE. Open to relocation and career opportunities in New Zealand.
+              Currently based in Dubai, UAE | Open to relocating to New Zealand
             </p>
 
             {/* Stats row */}
@@ -191,15 +185,22 @@ export default function Page() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#work"
-                className="bg-orange-brand text-ink px-7 py-4 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:bg-white hover:-translate-y-0.5"
+                className="bg-orange-brand text-ink px-6 py-4 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:bg-paper hover:text-ink hover:-translate-y-0.5"
               >
-                View Work →
+                View Production Work
+              </a>
+              <a
+                href="/Pawan_Kumar_Resume.pdf"
+                download
+                className="border border-line text-paper px-6 py-4 text-xs font-bold uppercase tracking-wider transition-colors hover:border-orange-brand hover:text-orange-brand"
+              >
+                Download CV
               </a>
               <a
                 href="#contact"
-                className="border border-line text-paper px-7 py-4 text-xs uppercase tracking-wider transition-colors hover:border-orange-brand hover:text-orange-brand"
+                className="border border-line text-paper px-6 py-4 text-xs font-bold uppercase tracking-wider transition-colors hover:border-orange-brand hover:text-orange-brand"
               >
-                Get In Touch
+                Contact Me
               </a>
             </div>
           </div>
@@ -213,7 +214,7 @@ export default function Page() {
                 className="w-full h-auto object-cover aspect-[4/3] block"
               />
               <div className="absolute bottom-0 left-0 bg-orange-brand text-ink font-mono text-[10px] font-bold py-1 px-3 select-none">
-                FIG.01 — CANOPY FASCIA, INDIANOIL
+                Canopy Fascia, IndianOil
               </div>
             </CornerFrame>
           </div>
@@ -221,14 +222,14 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="SCALE 1:1 — RETAIL INFRASTRUCTURE PORTFOLIO" />
+      <DimensionLine label="Retail Infrastructure Portfolio" />
 
       {/* ============ SUMMARY STRIP (ABOUT) ============ */}
       <section className="bg-steel-1 py-20 px-[6vw]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[140px_1fr] lg:grid-cols-[140px_1.2fr_1fr] gap-12 items-start">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[140px_1.2fr_1fr] gap-12 items-start">
           
           {/* Avatar Circle */}
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center lg:justify-start">
             <div className="w-[130px] h-[130px] border-2 border-orange-brand rounded-full flex flex-col items-center justify-center shrink-0 p-4 select-none">
               <div className="font-display text-2xl tracking-wide uppercase leading-none">
                 <span className="text-paper">P</span>
@@ -242,21 +243,21 @@ export default function Page() {
 
           {/* Description Paragraphs */}
           <div className="flex flex-col gap-4">
-            <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-              I am Pawan Kumar D, a passionate Graphic Designer with over 8+ years of experience in signage, retail branding, fabrication drawings, forecourt branding, and large-format advertising projects.
+            <p className="text-paper text-sm md:text-base leading-relaxed font-semibold">
+              I design for physical production, not just for the screen.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-              I specialize in converting brand guidelines into production-ready signage systems and installation drawings with accuracy and creativity.
+              I am a production-focused Graphic Designer with over 8 years of experience in large-format digital printing, signage systems, vehicle graphics, and prepress artwork. I specialize in translating brand guidelines and layouts into print-ready arrangements with strict attention to bleed, scale, and color accuracy.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-4">
-              Beyond design, I serve as the key coordination point between clients, the print production department, and dispatch — ensuring accurate handoff from concept through fabrication to final delivery.
+              Currently operating print machinery and managing file preparation at Ash &amp; Sims in Dubai, I work directly with flatbed/roll-to-roll plotters and finishing teams, ensuring accurate handoffs from design through fabrication to final delivery.
             </p>
             <a
               href="/Pawan_Kumar_Resume.pdf"
               download
-              className="bg-orange-brand text-ink py-3 px-6 font-mono text-[11px] uppercase tracking-wider font-bold w-fit transition-all hover:bg-white"
+              className="bg-orange-brand text-ink py-3 px-6 font-mono text-[11px] uppercase tracking-wider font-bold w-fit transition-all hover:bg-paper hover:text-ink"
             >
-              ↓ Download Resume (PDF)
+              ↓ Download CV (PDF)
             </a>
           </div>
 
@@ -272,17 +273,38 @@ export default function Page() {
               <span className="text-orange-brand font-semibold">📱 Phone:</span> +971 58 241 6063
             </div>
             <div>
-              <span className="text-orange-brand font-semibold">💼 Current Role:</span> Graphic Designer & Print Operator at Ash & Sims Advertising
+              <span className="text-orange-brand font-semibold">💼 Current Role:</span> Graphic Designer &amp; Print Operator
             </div>
             <div>
-              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> Work Visa (UAE) · Seeking NZ Sponsorship
+              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> UAE Work Visa (Seeking NZ Sponsorship)
             </div>
             <div>
               <span className="text-orange-brand font-semibold">🌐 Languages:</span> English · Telugu · Hindi
             </div>
-            <div>
-              <span className="text-orange-brand font-semibold">🏳 Nationality:</span> Indian
-            </div>
+          </div>
+        </div>
+
+        {/* Capability Grid */}
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-12 pt-12 border-t border-line/30 select-none">
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">8+</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Years Experience</span>
+          </div>
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">Prepress</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Preflight &amp; CMYK Separation</span>
+          </div>
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">50+</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Large-Format Sites</span>
+          </div>
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">Wraps</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Vehicle Signage &amp; Decals</span>
+          </div>
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">Artwork</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Production-Ready Files</span>
           </div>
         </div>
       </section>
@@ -378,7 +400,7 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="ISSUED FOR TENDER — TECHNICAL DOCUMENTATION" />
+      <DimensionLine label="Prepress &amp; Technical Specifications" />
 
       {/* ============ TECHNICAL ARTWORK SHOWCASE ============ */}
       <section className="bg-steel-1 py-24 px-[6vw]" id="technical">
@@ -401,7 +423,7 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="CAREER TIMELINE — 2009 TO PRESENT" />
+      <DimensionLine label="Professional Experience &amp; Skills" />
 
       {/* ============ EXPERIENCE TIMELINE ============ */}
       <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="experience">
@@ -425,14 +447,23 @@ export default function Page() {
               At Ambujam Advertising, I work with client-approved templates and brand guidelines—such as IOCL standards—translating site layouts into production-ready signage and sheet arrangements. I calculate exact panel divisions, sheet counts, and placements so that the fabrication and production teams can assemble everything without errors.
             </p>
 
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="font-mono text-[10px] md:text-xs border border-line text-paper-dim py-2 px-3 tracking-wide uppercase select-none hover:border-orange-brand hover:text-paper transition-colors duration-200"
-                >
-                  {skill}
-                </span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {Object.entries(skillsGrouped).map(([category, items]) => (
+                <div key={category} className="border border-line/40 bg-ink/10 p-4">
+                  <h4 className="font-mono text-xs text-orange-brand tracking-wider uppercase mb-2">
+                    // {category}
+                  </h4>
+                  <div className="flex flex-wrap gap-1">
+                    {items.map((item) => (
+                      <span
+                        key={item}
+                        className="font-mono text-[9px] md:text-[10px] text-paper-dim bg-steel-1 border border-line/20 px-2 py-0.5"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
