@@ -14,10 +14,43 @@ export default function Page() {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const skillsGrouped = {
-    Design: ['Adobe Illustrator', 'Adobe Photoshop', 'CorelDRAW', 'Figma'],
-    Prepress: ['Print-Ready Artwork', 'CMYK Separation', 'Colour Specifications', 'Large-Format Preflight', 'Production File Preparation'],
-    Production: ['Large-Format Printing', 'Digital Print Production', 'Print Quality Control', 'Production Artwork', 'Print Finishing'],
-    Signage: ['Retail Signage Layouts', 'Vehicle Wraps & Decals', 'ACM/ACP Panel Splits', 'Wayfinding & Exhibition Graphics'],
+    DESIGN: ['Adobe Illustrator', 'Adobe Photoshop', 'CorelDRAW', 'Figma'],
+    PREPRESS: [
+      'Print-ready artwork',
+      'CMYK preparation',
+      'Pantone colour matching',
+      'Large-format preflight',
+      'TIFF production files',
+      'RIP-ready files',
+      'Print & cut file preparation'
+    ],
+    'PRINT PRODUCTION': [
+      'Large-format digital printing',
+      'Flatbed printing',
+      'Roll-to-roll printing',
+      'Epson Eco-Solvent printing',
+      'Lamination',
+      'Print finishing',
+      'Print quality control'
+    ],
+    'CUTTING & FABRICATION': [
+      'Plotter cutting',
+      'Vector cut paths',
+      'ACP/ACM panel preparation',
+      'CNC cutting path/tool-path preparation',
+      'Fabrication-ready artwork'
+    ],
+    'VEHICLE GRAPHICS': [
+      'Vehicle measurement',
+      'Vehicle branding artwork',
+      'Vehicle mockups',
+      'RTA-compliant artwork preparation',
+      'Vinyl media selection',
+      'Flat-surface media',
+      'Semi-curved media',
+      'Fully curved media',
+      'Print & cut workflow'
+    ]
   };
 
   return (
@@ -258,7 +291,7 @@ export default function Page() {
               I am a production-focused Graphic Designer with over 8 years of experience in large-format digital printing, signage systems, vehicle graphics, and prepress artwork. I specialize in translating brand guidelines and layouts into print-ready arrangements with strict attention to bleed, scale, and color accuracy.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-4">
-              Currently operating print machinery and managing file preparation at Ash &amp; Sims in Dubai, I work directly with flatbed/roll-to-roll plotters and finishing teams, ensuring accurate handoffs from design through fabrication to final delivery.
+              Currently operating print machinery and managing file preparation at Ash &amp; Sims in Dubai, I work directly with flatbed and roll-to-roll digital printing equipment, plotter cutting equipment, and finishing teams, ensuring accurate handoffs from design through fabrication to final delivery.
             </p>
             <a
               href="/Pawan_Kumar_Resume.pdf"
@@ -428,36 +461,113 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Workflow &amp; Production Methodology" />
+      <DimensionLine label="Signage Fabrication &amp; CNC Production" />
 
-      {/* ============ HOW I WORK SECTION ============ */}
-      <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="workflow">
+      {/* ============ SIGNAGE FABRICATION & CNC PRODUCTION SECTION ============ */}
+      <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="signage-fabrication">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
+          <div>
+            <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
+              // 03 — FABRICATION DESIGN
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
+              Signage Fabrication &amp; CNC Production
+            </h2>
+            <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-6 font-semibold">
+              Designing for fabrication — not just visualization.
+            </p>
+            <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-6">
+              Translating design concepts into fabrication-ready drawings and cut files. I specialize in preparing files for manufacturing, ensuring that all components align, fit, and are optimized for machine cutting and bending.
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs text-paper-dim list-none pl-0">
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                ACP/ACM panel design &amp; layout
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                Panel divisions &amp; splitting sheets
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                Fabrication-ready vector artwork
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                CNC cutting path &amp; tool-path prep
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                Plotter vector cut paths &amp; registration
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                Lamination &amp; print protection specs
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                Print production scale calculations
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
+                Production-ready file packages
+              </li>
+            </ul>
+          </div>
+
+          <div className="border border-line p-6 bg-steel-1 flex flex-col gap-4 select-none">
+            <h4 className="font-display text-paper text-xs uppercase tracking-wider mb-2 border-b border-line pb-2">
+              CNC Tool-Path Preparation
+            </h4>
+            <p className="font-sans text-xs text-paper-dim leading-relaxed">
+              I prepare precise vector layouts for CNC routing of aluminum composite panels (ACP/ACM). This includes pocket routing paths for v-groove folds, contour cut paths, nesting parts to minimize sheet waste, and specifying tool offsets to match fabrication templates.
+            </p>
+            <div className="bg-ink p-4 border border-line flex flex-col gap-2 font-mono text-[10px] text-paper-dim">
+              <span className="text-orange-brand font-semibold">// ROUTING SCHEMATICS</span>
+              <span>- 90&deg; V-Groove depth: 2.2mm (for folding)</span>
+              <span>- Nesting yield: optimized per 1220x2440mm sheet</span>
+              <span>- Cut path margins: 15mm bleed for wrap edges</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <DimensionLine label="Vehicle Graphics &amp; Print Production Workflow" />
+
+      {/* ============ VEHICLE GRAPHICS WORKFLOW SECTION ============ */}
+      <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="vehicle-workflow">
         <div className="mb-14 max-w-2xl">
           <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-            // 03 — WORKFLOW METHODOLOGY
+            // 04 — VEHICLE GRAPHICS WORKFLOW
           </div>
           <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-            I Design for the Real World
+            Vehicle Graphics &amp; Print Production Workflow
           </h2>
           <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-            I design for physical production, not just the screen. Every layout is developed with strict adherence to material properties, fabrication tolerances, print margins, and install specifications.
+            From initial vehicle measurement to the final vinyl wrap application — a systematic approach ensuring dimensionally accurate graphics and RTA-compliant branding.
           </p>
         </div>
 
-        {/* Visual Workflow Steps */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative select-none">
+        {/* Workflow Steps Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 relative select-none">
           {[
-            { step: '01', title: 'Brief', desc: 'Understanding client dimensions, brand guidelines, and site constraints.' },
-            { step: '02', title: 'Design', desc: 'Developing creative layouts in scale using Illustrator, Photoshop, or CorelDRAW.' },
-            { step: '03', title: 'Prepress', desc: 'Executing file checks, CMYK/Pantone matching, bleeds, margins, and panel splits.' },
-            { step: '04', title: 'Print', desc: 'Configuring color profiles and printing on flatbed or roll-to-roll plotters.' },
-            { step: '05', title: 'Finishing', desc: 'Overseeing vinyl weed, edge trimming, ACM sheet cuts, and quality control checks.' },
-            { step: '06', title: 'Final Output', desc: 'Delivering fabrication-ready signage and prints exactly matching the design specs.' }
+            { step: '01', title: 'Measurement', desc: 'Taking physical measurements of the vehicle to prepare accurate branding artwork.' },
+            { step: '02', title: 'Artwork', desc: 'Preparing vehicle branding artwork according to the vehicle dimensions and branding requirements.' },
+            { step: '03', title: 'Mockup', desc: 'Creating a realistic vehicle mockup and sharing it with the client for approval.' },
+            { step: '04', title: 'RTA Approval', desc: 'Preparing vehicle branding artwork in accordance with applicable UAE RTA guidelines and approval requirements.' },
+            { step: '05', title: 'Print & Cut Files', desc: 'Exporting TIFF files and vector paths with registration marks for cutting.' },
+            { step: '06', title: 'RIP Prep', desc: 'Configuring files and sending RIP-ready layouts to the printing queue.' },
+            { step: '07', title: 'Epson Printing', desc: 'Operating Epson Eco-Solvent printing equipment for vehicle graphics production.' },
+            { step: '08', title: 'Plotter Cutting', desc: 'Preparing vector cut files and operating plotter cutting equipment for decals.' },
+            { step: '09', title: 'Finishing', desc: 'Weeding vinyl, trimming edges, and applying gloss or matte lamination.' },
+            { step: '10', title: 'Vehicle Branding', desc: 'Applying graphics with practical knowledge of vinyl media for flat, semi-curved, and fully curved surfaces.' }
           ].map((item) => (
             <div key={item.step} className="border border-line bg-steel-1 p-5 flex flex-col justify-between min-h-[165px]">
               <div>
                 <span className="font-mono text-xs text-orange-brand font-bold">{item.step}</span>
-                <h3 className="font-display text-xs text-paper uppercase mt-2 mb-3 leading-tight">{item.title}</h3>
+                <h3 className="font-display text-xs text-paper uppercase mt-2 mb-2 leading-tight">{item.title}</h3>
               </div>
               <p className="font-sans text-[10px] text-paper-dim leading-normal">{item.desc}</p>
             </div>
@@ -473,7 +583,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-12 items-start">
           <div>
             <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-              // 04 — PRODUCTION CAPABILITY
+              // 05 — PRODUCTION CAPABILITY
             </div>
             <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-6">
               Print Production Experience
@@ -505,7 +615,7 @@ export default function Page() {
                 In my current role, I manage the physical transition of files from digital layouts into premium physical prints. I handle all prepress prep work, preflight checks, spot colors, and CMYK/Pantone matching to guarantee color consistency.
               </p>
               <p>
-                I am responsible for operating our flatbed and roll-to-roll digital print plotters, weeding vinyl graphics, and overseeing final finishing processes. I work closely with our fabrication team to ensure correct installation sizing and zero-error print delivery.
+                I am responsible for operating our flatbed and roll-to-roll digital printing equipment, operating plotter cutting equipment, weeding vinyl graphics, and overseeing final finishing processes. I work closely with our fabrication team to ensure correct installation sizing and zero-error print delivery.
               </p>
             </div>
           </div>
@@ -519,7 +629,7 @@ export default function Page() {
               <span className="text-orange-brand font-semibold">100% Verified</span>
             </div>
             <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
-              <span>Flatbed &amp; Roll Plotter Operation</span>
+              <span>Flatbed &amp; Roll Printing Equipment</span>
               <span className="text-orange-brand font-semibold">Hands-on</span>
             </div>
             <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
