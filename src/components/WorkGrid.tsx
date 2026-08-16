@@ -165,7 +165,7 @@ export default function WorkGrid() {
                   )}
 
                   {/* Gradient Overlay & Details */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-5 md:p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-5 md:p-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                     <span className="font-mono text-[10px] md:text-xs text-orange-brand tracking-widest uppercase mb-1">
                       {proj.tag}
                     </span>
