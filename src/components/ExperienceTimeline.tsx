@@ -15,7 +15,7 @@ const TIMELINE_ITEMS: TimelineItem[] = [
     description: 'Designing and producing vehicle branding graphics from initial vehicle measurement and artwork through client mockup approval, RTA-compliant file preparation, RIP-ready production files, Epson Eco-Solvent printing and plotter cutting. Responsibilities include vehicle measurement, vehicle branding artwork, client mockups, preparing vehicle branding artwork in accordance with UAE RTA guidelines and approval requirements, TIFF/RIP file preparation, operation of flatbed and roll-to-roll digital printing equipment, plotter cutting equipment, vinyl media selection, and print quality control.',
   },
   {
-    period: 'OCT 2018 — 2026',
+    period: 'OCT 2018 — JUN 2026',
     role: 'Senior Graphic Designer',
     company: 'Ambujam Advertising LLC — Retail Infrastructure & ACP/MS Signage',
     description: 'Designed complex retail branding systems, indoor/outdoor signage, and detailed ACM/ACP layout arrangements compliant with client standards. Coordinated forecourt branding, pricing pylons, and canopy structures as one of several major retail projects. Served as key coordination point between clients, print room, fabrication floor, and dispatch to ensure zero-error delivery. Practical production experience includes printing machine operation, lamination machine operation, plotter cutting equipment, ACP/ACM panel artwork, CNC cutting path/tool-path preparation for ACP/ACM fabrication, fabrication-ready artwork, and signage production.',

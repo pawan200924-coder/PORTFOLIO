@@ -697,6 +697,31 @@ export default function Page() {
           {/* Timeline Nodes */}
           <div>
             <ExperienceTimeline />
+
+            {/* Education */}
+            <div className="mt-12 pt-8 border-t border-line/40">
+              <h4 className="font-mono text-xs text-orange-brand tracking-wider uppercase mb-4">
+                // Education
+              </h4>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <div className="font-display text-sm md:text-base text-paper">
+                    BTCA — Osmania University
+                  </div>
+                  <div className="font-mono text-xs text-paper-dim mt-0.5">
+                    In Progress · Since 2005
+                  </div>
+                </div>
+                <div>
+                  <div className="font-display text-sm md:text-base text-paper">
+                    Diploma — Computer Science
+                  </div>
+                  <div className="font-mono text-xs text-paper-dim mt-0.5">
+                    3-Year Programme · 2009
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
