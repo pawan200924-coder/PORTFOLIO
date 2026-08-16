@@ -155,7 +155,7 @@ export default function Page() {
 
             {/* Current Relocation Target */}
             <p className="text-paper text-sm font-semibold mb-8 max-w-lg border-l border-orange-brand/30 pl-4 py-1">
-              Currently based in Dubai, UAE | Open to relocating to New Zealand
+              Currently based and working in Dubai, UAE
             </p>
 
             {/* Stats row */}
@@ -264,7 +264,7 @@ export default function Page() {
           {/* Fact Sheet block */}
           <div className="bg-ink border border-line p-6 font-mono text-xs md:text-sm text-paper-dim flex flex-col gap-3.5">
             <div>
-              <span className="text-orange-brand font-semibold">📍 Location:</span> Dubai, UAE (Open to NZ Relocation)
+              <span className="text-orange-brand font-semibold">📍 Location:</span> Dubai, UAE
             </div>
             <div>
               <span className="text-orange-brand font-semibold">✉ Email:</span> pawankumard@hotmail.com
@@ -276,7 +276,7 @@ export default function Page() {
               <span className="text-orange-brand font-semibold">💼 Current Role:</span> Graphic Designer &amp; Print Operator
             </div>
             <div>
-              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> UAE Work Visa (Seeking NZ Sponsorship)
+              <span className="text-orange-brand font-semibold">📋 Visa Status:</span> UAE Work Visa
             </div>
             <div>
               <span className="text-orange-brand font-semibold">🌐 Languages:</span> English · Telugu · Hindi
@@ -489,7 +489,7 @@ export default function Page() {
         </h2>
 
         <p className="text-paper-dim text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-12">
-          Currently based in Dubai, UAE. Seeking Graphic Designer and Large-Format Print Operator opportunities in New Zealand. Open to sponsored positions and immediate relocation.
+          Currently based and working in Dubai, UAE. Open to connecting on print production, signage, and branding projects.
         </p>
 
         {/* Contact Links */}
