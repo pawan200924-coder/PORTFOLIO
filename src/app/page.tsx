@@ -186,7 +186,7 @@ export default function Page() {
             {/* Title */}
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.0] text-paper mb-6 uppercase">
               Graphic Designer <br />
-              <span className="text-orange-brand">&amp; Print, Prepress &amp; Signage Production Specialist</span>
+              <span className="text-orange-brand neon-pulse-load">&amp; Print, Prepress &amp; Signage Production Specialist</span>
             </h1>
 
             {/* Subtext */}
@@ -202,15 +202,15 @@ export default function Page() {
             {/* Stats row */}
             <div className="flex gap-8 md:gap-12 mb-8">
               <div>
-                <div className="font-display text-3xl md:text-4xl text-orange-brand">8+</div>
+                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">8+</div>
                 <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1.5">Years Exp.</div>
               </div>
               <div>
-                <div className="font-display text-3xl md:text-4xl text-orange-brand">50+</div>
+                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">50+</div>
                 <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1.5">Retail Sites</div>
               </div>
               <div>
-                <div className="font-display text-3xl md:text-4xl text-orange-brand">4</div>
+                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">4</div>
                 <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1.5">Oil Brands</div>
               </div>
             </div>

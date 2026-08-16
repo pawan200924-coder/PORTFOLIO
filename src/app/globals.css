@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #FAF8F5;          /* Warm neutral background */
-  --color-steel-1: #EFECE6;      /* Soft sand card background */
-  --color-steel-2: #E3DFD7;      /* Darker sand card background */
-  --color-orange-brand: #D44A00; /* Professional burnt orange */
-  --color-orange-dim: #A83A00;   /* Muted hover orange */
-  --color-paper: #1C1B1A;        /* Dark slate typography */
-  --color-paper-dim: #6B6760;    /* Muted charcoal typography */
-  --color-line: #D4D0C5;         /* Soft layout lines */
+  --color-ink: #12151C;          /* Deep navy-charcoal background */
+  --color-steel-1: #1B1E26;      /* Slightly lighter dark navy-charcoal for cards */
+  --color-steel-2: #242836;      /* Lighter dark navy-charcoal for borders */
+  --color-orange-brand: #FF7A1A; /* Sodium-orange glow accent */
+  --color-orange-dim: #D95F0D;   /* Darker hover sodium-orange */
+  --color-paper: #FFF6E5;        /* Warm LED-white text */
+  --color-paper-dim: #A1A6B3;    /* Muted blue-gray text */
+  --color-line: #222736;         /* Soft dark layout lines */
 
   --font-sans: var(--font-inter), sans-serif;
   --font-display: var(--font-archivo-black), sans-serif;
@@ -16,21 +16,46 @@
 }
 
 :root {
-  --background: #FAF8F5;
-  --foreground: #1C1B1A;
+  --background: #12151C;
+  --foreground: #FFF6E5;
 }
 
 body {
-  background: #FAF8F5;
-  color: #1C1B1A;
+  background: #12151C;
+  color: #FFF6E5;
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
 }
 
-/* Custom engineering grid background style */
+/* Custom engineering grid background style with glowing orange grids */
 .blueprint-grid {
   background-image:
-    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(28,27,26,0.02) 39px, rgba(28,27,26,0.02) 40px),
-    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(28,27,26,0.02) 39px, rgba(28,27,26,0.02) 40px);
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,122,26,0.012) 39px, rgba(255,122,26,0.012) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,122,26,0.012) 39px, rgba(255,122,26,0.012) 40px);
+}
+
+/* Neon glow classes */
+.neon-glow {
+  text-shadow: 0 0 4px rgba(255, 122, 26, 0.4), 0 0 12px rgba(255, 122, 26, 0.2);
+}
+
+.neon-line {
+  box-shadow: 0 0 3px rgba(255, 122, 26, 0.4), 0 0 8px rgba(255, 122, 26, 0.2);
+}
+
+/* Pulse animation for Hero title */
+@keyframes neon-pulse {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(255, 122, 26, 0.5), 0 0 12px rgba(255, 122, 26, 0.3);
+    opacity: 0.98;
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(255, 122, 26, 0.8), 0 0 20px rgba(255, 122, 26, 0.5), 0 0 30px rgba(255, 122, 26, 0.3);
+    opacity: 1;
+  }
+}
+
+.neon-pulse-load {
+  animation: neon-pulse 3s ease-in-out infinite;
 }
 
