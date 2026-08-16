@@ -36,9 +36,6 @@ export default function Page() {
               <div className="font-display text-sm tracking-wide leading-none text-paper uppercase">
                 Pawan Kumar D
               </div>
-              <div className="font-mono text-[10px] text-paper-dim tracking-wider mt-1 uppercase">
-                Senior Designer
-              </div>
             </div>
           </div>
 
@@ -396,10 +393,10 @@ export default function Page() {
             // 01 — SELECTED WORK
           </div>
           <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-            Retail Infrastructure<br />& Signage Systems
+            Print, Signage &amp; Production
           </h2>
           <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-            End-to-end design and production artwork for fuel retail branding — from canopy fascia and monoliths to showroom cladding and exhibition stands, built to client SOPs and fabricated for real-world install.
+            Selected work across large-format print, vehicle graphics, signage, retail branding, exhibition graphics and production artwork.
           </p>
         </div>
 
@@ -465,6 +462,79 @@ export default function Page() {
               <p className="font-sans text-[10px] text-paper-dim leading-normal">{item.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Divider */}
+      <DimensionLine label="Print Production Experience" />
+
+      {/* ============ PRINT PRODUCTION EXPERIENCE SECTION ============ */}
+      <section className="bg-steel-1 py-20 px-[6vw]" id="production-experience">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-12 items-start">
+          <div>
+            <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
+              // 04 — PRODUCTION CAPABILITY
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-6">
+              Print Production Experience
+            </h2>
+            
+            {/* Visual production workflow */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 font-mono text-[10px] md:text-xs text-paper mb-8 bg-ink border border-line p-4 w-fit select-none">
+              <span>Artwork Preparation</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Preflight</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>CMYK / Colour Management</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Large Format Printing</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Finishing</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Quality Control</span>
+            </div>
+
+            <div className="flex flex-col gap-4 text-paper-dim text-sm leading-relaxed">
+              <div className="border-l-2 border-orange-brand pl-4 py-1 mb-2">
+                <h4 className="font-display text-paper text-sm uppercase tracking-wider mb-1">
+                  Current Role: Graphic Designer &amp; Print Operator
+                </h4>
+                <p className="font-mono text-xs text-orange-brand">Ash &amp; Sims Advertising LLC — Dubai, UAE (2026 — Present)</p>
+              </div>
+              <p>
+                In my current role, I manage the physical transition of files from digital layouts into premium physical prints. I handle all prepress prep work, preflight checks, spot colors, and CMYK/Pantone matching to guarantee color consistency.
+              </p>
+              <p>
+                I am responsible for operating our flatbed and roll-to-roll digital print plotters, weeding vinyl graphics, and overseeing final finishing processes. I work closely with our fabrication team to ensure correct installation sizing and zero-error print delivery.
+              </p>
+            </div>
+          </div>
+
+          <div className="border border-line p-6 bg-ink flex flex-col gap-4 select-none">
+            <h4 className="font-display text-paper text-xs uppercase tracking-wider mb-2 border-b border-line pb-2">
+              Production Checkpoints
+            </h4>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Raster Image Processor (RIP) setup</span>
+              <span className="text-orange-brand font-semibold">100% Verified</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Flatbed &amp; Roll Plotter Operation</span>
+              <span className="text-orange-brand font-semibold">Hands-on</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Vinyl Weed &amp; Edge Trimming</span>
+              <span className="text-orange-brand font-semibold">QC Overseen</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Pantone / Spot Color Verification</span>
+              <span className="text-orange-brand font-semibold">Color Match</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1">
+              <span>ACM / ACP Cladding Sheet Splits</span>
+              <span className="text-orange-brand font-semibold">Scale Prep</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -575,7 +645,7 @@ export default function Page() {
           © 2026 D. Pawan Kumar — Graphic Designer
         </div>
         <div className="tracking-wider uppercase text-orange-brand/80">
-          Design &rarr; Prepress &rarr; Print &rarr; Finishing
+          Concept &middot; Prepress &middot; Print &middot; Fabrication Coordination
         </div>
       </footer>
     </div>

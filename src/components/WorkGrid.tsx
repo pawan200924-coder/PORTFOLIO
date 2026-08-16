@@ -23,11 +23,11 @@ const CATEGORIES: Category[] = [
     name: 'Print & Production',
     isFeatureLayout: true,
     projects: [
-      { title: 'Trade Show Exhibition Stand', tag: 'A-One Gold', image: '/images/p11_kiosk_aone.jpg' },
-      { title: 'Corporate Expo Kiosk', tag: 'SK Steel', image: '/images/p11_kiosk1.jpg' },
-      { title: 'Modular Exhibition Structure', tag: 'BD', image: '/images/p11_kiosk_bd.jpg' },
-      { title: 'Trade Fair Display Unit', tag: 'Expo', image: '/images/p11_kiosk3.jpg' },
-      { title: 'Branded Expo Booth', tag: 'Steel Tech', image: '/images/p11_kiosk2.jpg' },
+      { title: 'Large-Format Exhibition Banner', tag: 'A-One Gold', image: '/images/p11_kiosk_aone.jpg' },
+      { title: 'Double-Sided Fabric Flag Print', tag: 'SK Steel', image: '/images/p11_kiosk1.jpg' },
+      { title: 'Modular Display Backdrop & Graphics', tag: 'BD', image: '/images/p11_kiosk_bd.jpg' },
+      { title: 'Trade Show Roll-Up Banner Set', tag: 'Expo', image: '/images/p11_kiosk3.jpg' },
+      { title: 'Retail Print Graphics & Signage', tag: 'Steel Tech', image: '/images/p11_kiosk2.jpg' },
     ],
   },
   {
