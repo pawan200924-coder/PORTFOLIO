@@ -230,7 +230,7 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Retail Infrastructure Portfolio" />
+      <DimensionLine label="Print, Signage &amp; Production Portfolio" />
 
       {/* ============ SUMMARY STRIP (ABOUT) ============ */}
       <section className="bg-steel-1 py-20 px-[6vw]">
