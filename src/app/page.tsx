@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import DimensionLine from '@/components/DimensionLine';
 import CornerFrame from '@/components/CornerFrame';
@@ -95,13 +94,6 @@ export default function Page() {
               Contact
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
             </a>
-            <Link
-              href="/english-coach"
-              className="bg-orange-brand/10 border border-orange-brand/40 text-orange-brand hover:bg-orange-brand hover:text-white px-3 py-1.5 rounded font-mono text-[11px] uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-sm"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-brand animate-ping" />
-              <span>AI English Coach</span>
-            </Link>
             <a
               href="/Pawan_Kumar_Resume.pdf"
               download
@@ -169,14 +161,6 @@ export default function Page() {
             >
               Contact
             </a>
-            <Link
-              href="/english-coach"
-              onClick={toggleMobileMenu}
-              className="font-display text-2xl uppercase tracking-wider text-orange-brand hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>AI English Coach</span>
-              <span className="text-xs font-mono px-2 py-0.5 rounded bg-orange-brand text-white">PRO</span>
-            </Link>
             <a
               href="/Pawan_Kumar_Resume.pdf"
               download

@@ -5,17 +5,13 @@ export const viewport: Viewport = {
   themeColor: "#0E0E10",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export const metadata: Metadata = {
-  title: "Pawan Kumar | Graphic Designer & AI English Voice Coach",
-  description: "Graphic Designer and Print Production Specialist with 8+ years of experience in signage, prepress, large-format printing, vehicle graphics, and AI English Voice Coach.",
-  manifest: "/manifest.json",
+  title: "Pawan Kumar | Graphic Designer | Print, Prepress & Signage Production",
+  description: "Graphic Designer and Print Production Specialist with 8+ years of experience in signage, prepress, large-format printing, vehicle graphics and production artwork. Based in Dubai and open to New Zealand opportunities.",
   icons: {
     icon: "/favicon.ico",
-    apple: "/favicon.ico",
   },
 };
 
