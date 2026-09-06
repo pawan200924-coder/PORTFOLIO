@@ -1,26 +1,22 @@
-import type { Metadata } from "next";
-import { Inter, Archivo_Black, JetBrains_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const archivoBlack = Archivo_Black({
-  variable: "--font-archivo-black",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
+export const viewport: Viewport = {
+  themeColor: "#0E0E10",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
-  title: "Pawan Kumar | Graphic Designer | Print, Prepress & Signage Production",
-  description: "Graphic Designer and Print Production Specialist with 8+ years of experience in signage, prepress, large-format printing, vehicle graphics and production artwork. Based in Dubai and open to New Zealand opportunities.",
+  title: "Pawan Kumar | Graphic Designer & AI English Voice Coach",
+  description: "Graphic Designer and Print Production Specialist with 8+ years of experience in signage, prepress, large-format printing, vehicle graphics, and AI English Voice Coach.",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -31,11 +27,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${archivoBlack.variable} ${jetbrainsMono.variable} scroll-smooth antialiased`}
+      className="scroll-smooth antialiased"
       suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col bg-ink text-paper" suppressHydrationWarning>{children}</body>
+      <body className="min-h-screen flex flex-col bg-ink text-paper" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
-
