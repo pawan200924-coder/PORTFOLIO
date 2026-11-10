@@ -10,8 +10,36 @@ import ExperienceTimeline from '@/components/ExperienceTimeline';
 
 export default function Page() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [heroImageIndex, setHeroImageIndex] = useState(0);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  const heroShowcase = [
+    {
+      title: 'Canopy Fascia & Forecourt Signage · IndianOil',
+      tag: '50+ RETAIL SITES',
+      label: 'IndianOil Canopy',
+      image: '/images/p4_hero_indianoil.jpg',
+    },
+    {
+      title: 'Full Commercial Van Wrap · Libra Tech Services LLC',
+      tag: 'FLEET BRANDING',
+      label: 'Libra Tech Van',
+      image: '/images/vehicle-branding/libra_tech_peugeot_expert.jpg',
+    },
+    {
+      title: 'Floral Line-Art Corporate Fleet Wrap · Floward',
+      tag: 'VEHICLE GRAPHICS',
+      label: 'Floward Ertiga',
+      image: '/images/vehicle-branding/floward_suzuki_ertiga.jpg',
+    },
+    {
+      title: 'Mobile Pet Grooming Van Livery · Bath & Bubbles',
+      tag: 'CUSTOM MASCOT & WRAP',
+      label: 'Bath & Bubbles',
+      image: '/images/vehicle-branding/bath_and_bubbles_peugeot_boxer.jpg',
+    },
+  ];
 
   const skillsGrouped = {
     'AI & CREATIVE': [
@@ -73,8 +101,8 @@ export default function Page() {
     <div className="bg-ink min-h-screen text-paper selection:bg-orange-brand selection:text-ink font-sans">
       
       {/* ============ NAVIGATION HEADER ============ */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-ink/95 to-ink/0 backdrop-blur-[6px] transition-all duration-200">
-        <div className="max-w-7xl mx-auto px-[6vw] py-5 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-ink/95 backdrop-blur-md border-b border-line/60 transition-all duration-200">
+        <div className="max-w-7xl mx-auto px-[6vw] py-4 flex items-center justify-between">
           <div className="flex items-center gap-3.5 select-none">
             {/* Box Logo Mark */}
             <div className="w-10 h-10 border-2 border-orange-brand flex items-center justify-center font-display text-sm shrink-0">
@@ -92,7 +120,7 @@ export default function Page() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             <a href="#work" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
               Work
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
@@ -193,71 +221,64 @@ export default function Page() {
       </AnimatePresence>
 
       {/* ============ HERO SECTION ============ */}
-      <section className="relative min-h-screen flex flex-col justify-center blueprint-grid pt-32 pb-16 px-[6vw] max-w-7xl mx-auto overflow-hidden select-none">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center relative z-10">
+      <section className="relative pt-32 sm:pt-36 md:pt-40 pb-20 px-[6vw] max-w-7xl mx-auto blueprint-grid overflow-hidden select-none">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] gap-12 lg:gap-14 items-center relative z-10">
           <div>
-            {/* Eyebrow / Workflow */}
-            <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-5 flex items-center gap-3">
+            {/* Eyebrow / Identity */}
+            <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-4 flex items-center gap-3">
               <span className="w-8 h-[1px] bg-orange-brand block" />
-              <span>Concept · AI Exploration · Prepress · Print · Finishing · Delivery</span>
+              <span>D. Pawan Kumar · Senior Graphic Designer</span>
             </div>
             
-            {/* Title */}
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.0] text-paper mb-6 uppercase">
-              Senior Graphic Designer <br />
-              <span className="text-orange-brand neon-pulse-load">&amp; Brand, Prepress &amp; Signage Production Specialist</span>
+            {/* Title - Clean, disciplined hierarchy */}
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.08] text-paper mb-4 uppercase">
+              Brand Design, Signage &amp; <br />
+              <span className="text-orange-brand neon-pulse-load">Print Production Specialist</span>
             </h1>
 
-            {/* Subtext */}
-            <p className="text-paper-dim text-sm md:text-base max-w-lg leading-relaxed mb-6">
-              Over 7+ years of experience in brand design, outdoor advertising, retail signage rollouts (50+ Indian Oil &amp; HPCL sites), prepress, vehicle branding wraps, and modern AI workflows.
-            </p>
-
-            {/* Target Location */}
-            <p className="text-paper text-sm font-semibold mb-8 max-w-lg border-l border-orange-brand/50 pl-4 py-1 bg-steel-1/30">
-              Based in Dubai, UAE | Looking for corporate graphic designer roles in the UAE &amp; GCC
-            </p>
-
-            {/* Stats row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 mb-8">
-              <div className="border border-line/40 bg-steel-1/40 p-3.5">
-                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">7+</div>
-                <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1">Years Exp.</div>
-              </div>
-              <div className="border border-line/40 bg-steel-1/40 p-3.5">
-                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">50+</div>
-                <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1">Retail Sites</div>
-              </div>
-              <div className="border border-line/40 bg-steel-1/40 p-3.5">
-                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">30%</div>
-                <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1">Faster Turnaround</div>
-              </div>
-              <div className="border border-line/40 bg-steel-1/40 p-3.5">
-                <div className="font-display text-3xl md:text-4xl text-orange-brand neon-glow">0</div>
-                <div className="font-mono text-[10px] text-paper-dim uppercase tracking-wider mt-1">Major Reprints (6 Yrs)</div>
-              </div>
+            {/* Target Location Status Pill */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-steel-1 border border-line text-xs font-mono text-paper mb-5">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+              <span>Based in Dubai, UAE · Open to UAE &amp; GCC Corporate Roles</span>
             </div>
 
-            {/* Hero Quick Meta */}
-            <div className="font-mono text-xs text-paper-dim flex flex-wrap gap-x-6 gap-y-2 mb-10">
-              <span>📍 Dubai, UAE (Open to UAE &amp; GCC)</span>
-              <span>✉ pawankumard@hotmail.com</span>
-              <span>📱 +971 58 264 8833 (UAE)</span>
-              <span>📱 +91 93908 90890 (IND)</span>
+            {/* Subtext */}
+            <p className="text-paper-dim text-sm md:text-base max-w-xl leading-relaxed mb-6">
+              Over 7+ years of experience delivering brand identities, 50+ petroleum retail site rollouts for Indian Oil &amp; HPCL, zero-reprint prepress production, commercial fleet vehicle wraps, and modern AI workflows.
+            </p>
+
+            {/* Stats row - Compact & Clean */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 max-w-xl">
+              <div className="border border-line/50 bg-steel-1/60 p-3">
+                <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">7+</div>
+                <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Years Exp.</div>
+              </div>
+              <div className="border border-line/50 bg-steel-1/60 p-3">
+                <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">50+</div>
+                <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Retail Sites</div>
+              </div>
+              <div className="border border-line/50 bg-steel-1/60 p-3">
+                <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">30%</div>
+                <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Faster Delivery</div>
+              </div>
+              <div className="border border-line/50 bg-steel-1/60 p-3">
+                <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">0</div>
+                <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Major Reprints</div>
+              </div>
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
               <a
                 href="#work"
-                className="bg-orange-brand text-ink px-6 py-4 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:bg-paper hover:text-ink hover:-translate-y-0.5"
+                className="bg-orange-brand text-ink px-6 py-3.5 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:bg-paper hover:text-ink hover:-translate-y-0.5"
               >
                 View Production Work
               </a>
               <a
                 href="/Pawan_Kumar_Resume.pdf"
                 download
-                className="border border-line text-paper px-6 py-4 text-xs font-bold uppercase tracking-wider transition-colors hover:border-orange-brand hover:text-orange-brand"
+                className="border border-line text-paper px-6 py-3.5 text-xs font-bold uppercase tracking-wider transition-colors hover:border-orange-brand hover:text-orange-brand"
               >
                 Download Updated CV
               </a>
@@ -265,25 +286,76 @@ export default function Page() {
                 href="https://wa.me/971582648833"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-orange-brand/60 text-orange-brand px-6 py-4 text-xs font-bold uppercase tracking-wider transition-colors hover:bg-orange-brand hover:text-ink"
+                className="border border-orange-brand/60 text-orange-brand px-5 py-3.5 text-xs font-bold uppercase tracking-wider transition-colors hover:bg-orange-brand hover:text-ink flex items-center gap-2"
               >
-                💬 WhatsApp Chat
+                <span>💬</span> WhatsApp
               </a>
+            </div>
+
+            {/* Hero Quick Meta */}
+            <div className="font-mono text-xs text-paper-dim flex flex-wrap gap-x-5 gap-y-1">
+              <span>📍 Dubai, UAE</span>
+              <span>✉ pawankumard@hotmail.com</span>
+              <span>📱 +971 58 264 8833 (UAE)</span>
+              <span>📱 +91 93908 90890 (IND)</span>
             </div>
           </div>
 
-          {/* Right Side image viewport with corner framing */}
-          <div className="relative max-w-md lg:max-w-none mx-auto w-full">
-            <CornerFrame>
-              <img
-                src="/images/vehicle-branding/libra_tech_peugeot_expert.jpg"
-                alt="Libra Tech Services Commercial Van Full Wrap"
-                className="w-full h-auto object-cover aspect-[4/3] block"
-              />
-              <div className="absolute bottom-0 left-0 bg-orange-brand text-ink font-mono text-[10px] font-bold py-1 px-3 select-none">
-                Vehicle Branding Wrap, Libra Tech Services LLC
+          {/* Right Side: Interactive Flagship Showcase */}
+          <div className="relative max-w-lg lg:max-w-none mx-auto w-full">
+            <CornerFrame className="bg-steel-1 overflow-hidden shadow-2xl">
+              <div className="relative aspect-[16/11] sm:aspect-[4/3] w-full overflow-hidden bg-black/60">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={heroShowcase[heroImageIndex].image}
+                    src={heroShowcase[heroImageIndex].image}
+                    alt={heroShowcase[heroImageIndex].title}
+                    initial={{ opacity: 0, scale: 1.03 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="w-full h-full object-cover block"
+                  />
+                </AnimatePresence>
+
+                {/* Badge Tag */}
+                <div className="absolute top-3 right-3 bg-ink/90 border border-line text-orange-brand font-mono text-[9px] font-bold py-1 px-2.5 uppercase tracking-wider backdrop-blur-sm z-10">
+                  {heroShowcase[heroImageIndex].tag}
+                </div>
+
+                {/* Caption Bar */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-4 z-10">
+                  <div className="font-display text-xs sm:text-sm text-paper leading-tight">
+                    {heroShowcase[heroImageIndex].title}
+                  </div>
+                </div>
               </div>
             </CornerFrame>
+
+            {/* Quick Interactive Selector Tabs */}
+            <div className="grid grid-cols-4 gap-2 mt-3 select-none">
+              {heroShowcase.map((item, idx) => {
+                const isSelected = idx === heroImageIndex;
+                return (
+                  <button
+                    key={item.title}
+                    onClick={() => setHeroImageIndex(idx)}
+                    className={`cursor-pointer border text-left p-1.5 transition-all duration-200 ${
+                      isSelected
+                        ? 'border-orange-brand bg-steel-1'
+                        : 'border-line/60 bg-ink/40 hover:border-orange-brand/50 opacity-70 hover:opacity-100'
+                    }`}
+                  >
+                    <div className="aspect-[16/10] overflow-hidden mb-1 bg-black">
+                      <img src={item.image} alt="" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="font-mono text-[8px] md:text-[9px] text-paper-dim truncate">
+                      {item.label}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
