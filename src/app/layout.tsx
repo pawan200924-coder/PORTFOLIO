@@ -8,8 +8,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Pawan Kumar | Graphic Designer | Print, Prepress & Signage Production",
-  description: "Graphic Designer and Print Production Specialist with 8+ years of experience in signage, prepress, large-format printing, vehicle graphics and production artwork. Based in Dubai and open to New Zealand opportunities.",
+  title: "D. Pawan Kumar | Senior Graphic Designer | Brand Design · Outdoor · Print",
+  description: "Senior Graphic Designer with 7+ years of experience in brand design, outdoor advertising, retail signage (50+ Indian Oil & HPCL sites), prepress, vehicle branding, and modern AI workflows (Gemini, Veo, ComfyUI). Based in Dubai, UAE and open to corporate roles across UAE & GCC.",
   icons: {
     icon: "/favicon.ico",
   },

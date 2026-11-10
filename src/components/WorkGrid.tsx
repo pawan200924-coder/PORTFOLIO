@@ -20,6 +20,48 @@ interface Category {
 const CATEGORIES: Category[] = [
   {
     id: 't1',
+    name: 'Vehicle Graphics & Wraps',
+    isFeatureLayout: true,
+    projects: [
+      {
+        title: 'Full Commercial Van Wrap & Electrical Branding',
+        tag: 'Libra Tech Services LLC · Peugeot Expert',
+        image: '/images/vehicle-branding/libra_tech_peugeot_expert.jpg',
+      },
+      {
+        title: 'Pet Grooming Fleet Livery & Custom Mascot Art',
+        tag: 'Bath & Bubbles · Peugeot Boxer',
+        image: '/images/vehicle-branding/bath_and_bubbles_peugeot_boxer.jpg',
+      },
+      {
+        title: 'Flower Delivery Commercial Fleet Wrap',
+        tag: 'Floward · Renault Dokker',
+        image: '/images/vehicle-branding/floward_renault_dokker.jpg',
+      },
+      {
+        title: 'Floral Line-Art Corporate Fleet Wrap',
+        tag: 'Floward · Suzuki Ertiga',
+        image: '/images/vehicle-branding/floward_suzuki_ertiga.jpg',
+      },
+      {
+        title: 'Landscaping & Pool Services Vehicle Decals',
+        tag: 'Greenly.ae · Toyota Previa',
+        image: '/images/vehicle-branding/greenly_toyota_previa.jpg',
+      },
+      {
+        title: 'Corporate Metal Works Livery & Half-Wrap',
+        tag: 'Golden Tower Metal Industries · Toyota Yaris',
+        image: '/images/vehicle-branding/golden_tower_toyota_yaris.jpg',
+      },
+      {
+        title: 'Minimalist EV Home Maintenance Fleet Branding',
+        tag: 'Expat Group · Tesla Model Y',
+        image: '/images/vehicle-branding/expat_group_tesla_model_y.jpg',
+      },
+    ],
+  },
+  {
+    id: 't2',
     name: 'Print & Production',
     isFeatureLayout: true,
     projects: [
@@ -28,16 +70,6 @@ const CATEGORIES: Category[] = [
       { title: 'Modular Display Backdrop & Graphics', tag: 'BD', image: '/images/p11_kiosk_bd.jpg' },
       { title: 'Trade Show Roll-Up Banner Set', tag: 'Expo', image: '/images/p11_kiosk3.jpg' },
       { title: 'Retail Print Graphics & Signage', tag: 'Steel Tech', image: '/images/p11_kiosk2.jpg' },
-    ],
-  },
-  {
-    id: 't2',
-    name: 'Vehicle Graphics',
-    isFeatureLayout: false,
-    projects: [
-      { title: 'Commercial Van Decal Layout', tag: 'Vinyl Graphics', image: '/images/p7_traffic4.jpg' },
-      { title: 'Corporate Fleet Branding Wrap', tag: 'Vehicle Branding', image: '/images/p7_traffic6.jpg' },
-      { title: 'Transit Bus Advertising Layout', tag: 'Transit Advertising', image: '/images/p7_traffic8.jpg' },
     ],
   },
   {
@@ -128,7 +160,7 @@ export default function WorkGrid() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35, ease: 'easeOut' }}
-            className={`grid gap-1 ${
+            className={`grid gap-2 ${
               currentCategory.isFeatureLayout
                 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]'
                 : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
@@ -143,7 +175,7 @@ export default function WorkGrid() {
                   initial={{ opacity: 0, scale: 0.98 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.3, delay: idx * 0.05 }}
-                  className={`group relative overflow-hidden bg-steel-1 select-none ${
+                  className={`group relative overflow-hidden bg-steel-1 select-none border border-line/40 hover:border-orange-brand/60 transition-colors duration-200 ${
                     isFirstInFeature
                       ? 'row-span-1 md:col-span-2 lg:col-span-1 lg:row-span-2 aspect-[16/10] md:aspect-[16/9] lg:aspect-auto'
                       : 'aspect-[4/3]'
@@ -165,7 +197,7 @@ export default function WorkGrid() {
                   )}
 
                   {/* Gradient Overlay & Details */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-5 md:p-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-5 md:p-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                     <span className="font-mono text-[10px] md:text-xs text-orange-brand tracking-widest uppercase mb-1">
                       {proj.tag}
                     </span>
