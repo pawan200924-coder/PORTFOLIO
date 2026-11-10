@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import CornerFrame from './CornerFrame';
 
 interface Project {
   title: string;
@@ -20,6 +19,18 @@ interface Category {
 const CATEGORIES: Category[] = [
   {
     id: 't1',
+    name: 'Print & Production',
+    isFeatureLayout: true,
+    projects: [
+      { title: 'Large-Format Exhibition Banner', tag: 'A-One Gold', image: '/images/p11_kiosk_aone.jpg' },
+      { title: 'Double-Sided Fabric Flag Print', tag: 'SK Steel', image: '/images/p11_kiosk1.jpg' },
+      { title: 'Modular Display Backdrop & Graphics', tag: 'BD', image: '/images/p11_kiosk_bd.jpg' },
+      { title: 'Trade Show Roll-Up Banner Set', tag: 'Expo', image: '/images/p11_kiosk3.jpg' },
+      { title: 'Retail Print Graphics & Signage', tag: 'Steel Tech', image: '/images/p11_kiosk2.jpg' },
+    ],
+  },
+  {
+    id: 't2',
     name: 'Vehicle Graphics & Wraps',
     isFeatureLayout: true,
     projects: [
@@ -58,18 +69,6 @@ const CATEGORIES: Category[] = [
         tag: 'Expat Group · Tesla Model Y',
         image: '/images/vehicle-branding/expat_group_tesla_model_y.jpg',
       },
-    ],
-  },
-  {
-    id: 't2',
-    name: 'Print & Production',
-    isFeatureLayout: true,
-    projects: [
-      { title: 'Large-Format Exhibition Banner', tag: 'A-One Gold', image: '/images/p11_kiosk_aone.jpg' },
-      { title: 'Double-Sided Fabric Flag Print', tag: 'SK Steel', image: '/images/p11_kiosk1.jpg' },
-      { title: 'Modular Display Backdrop & Graphics', tag: 'BD', image: '/images/p11_kiosk_bd.jpg' },
-      { title: 'Trade Show Roll-Up Banner Set', tag: 'Expo', image: '/images/p11_kiosk3.jpg' },
-      { title: 'Retail Print Graphics & Signage', tag: 'Steel Tech', image: '/images/p11_kiosk2.jpg' },
     ],
   },
   {
