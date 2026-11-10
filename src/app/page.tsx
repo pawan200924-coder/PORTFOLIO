@@ -16,83 +16,84 @@ export default function Page() {
 
   const heroShowcase = [
     {
-      title: 'Floral Line-Art Corporate Fleet Wrap · Floward',
-      tag: 'BRAND IDENTITY & LIVERY',
-      label: 'Floward Fleet',
-      image: '/images/vehicle-branding/floward_suzuki_ertiga.jpg',
+      title: 'Canopy Fascia & Forecourt Signage · IndianOil',
+      tag: '50+ RETAIL SITES',
+      label: 'IndianOil Canopy',
+      image: '/images/p4_hero_indianoil.jpg',
     },
     {
       title: 'Full Commercial Van Wrap · Libra Tech Services LLC',
-      tag: 'COMMERCIAL FLEET WRAP',
+      tag: 'FLEET BRANDING',
       label: 'Libra Tech Van',
       image: '/images/vehicle-branding/libra_tech_peugeot_expert.jpg',
     },
     {
-      title: 'Modular Trade Show Display & Exhibition Graphics · BD',
-      tag: 'EVENT & MARKETING COLLATERAL',
-      label: 'Exhibition Kiosk',
-      image: '/images/p11_kiosk_bd.jpg',
+      title: 'Floral Line-Art Corporate Fleet Wrap · Floward',
+      tag: 'VEHICLE GRAPHICS',
+      label: 'Floward Ertiga',
+      image: '/images/vehicle-branding/floward_suzuki_ertiga.jpg',
     },
     {
-      title: 'Pet Grooming Mascot Art & Mobile Van Livery · Bath & Bubbles',
-      tag: 'CHARACTER ART & WRAP',
+      title: 'Mobile Pet Grooming Van Livery · Bath & Bubbles',
+      tag: 'CUSTOM MASCOT & WRAP',
       label: 'Bath & Bubbles',
       image: '/images/vehicle-branding/bath_and_bubbles_peugeot_boxer.jpg',
     },
   ];
 
   const skillsGrouped = {
-    'BRAND IDENTITY & DESIGN': [
-      'Logo design & visual identity',
-      'Brand guideline manuals & SOPs',
-      'Corporate stationery & letterheads',
-      'Marketing collateral & sales kits',
-      'Brochures, catalogs & booklets',
-      'Flyers, posters & POSM materials',
-      'Executive presentation decks',
-      'Social media creative assets',
+    'AI & CREATIVE': [
+      'Google Gemini',
+      'Google Flow (Veo)',
+      'ComfyUI Workflows',
+      'AI Visual Research',
+      'Prompt Engineering',
+      'Visual Concept Storyboarding',
     ],
-    'MARKETING & ADVERTISING': [
-      'Outdoor billboards & hoardings',
-      'Exhibition booths & modular kiosks',
-      'Roll-up banners & pop-up backdrops',
-      'Trade show promotional suites',
-      'Retail visual merchandising',
-      'Double-sided fabric flags',
-      'Commercial signage & wayfinding',
-    ],
-    'VEHICLE FLEET BRANDING': [
-      'Commercial van wraps & decals',
-      'Fleet branding design systems',
-      'Photorealistic 3D client mockups',
-      'UAE RTA guideline compliance',
-      'Vinyl media selection (Cast/Poly)',
-      'Print-and-cut fleet production',
-    ],
-    'AI & CREATIVE FLOW': [
-      'Google Gemini visual research',
-      'Google Flow (Veo) video concepts',
-      'ComfyUI generative workflows',
-      'Visual storyboarding & ideation',
-      'Creative prompt engineering',
-      'Rapid concept prototyping',
-    ],
-    'DESIGN TOOLS & SOFTWARE': [
+    'DESIGN & TOOLS': [
       'Adobe Illustrator',
       'Adobe Photoshop',
-      'Adobe InDesign',
       'CorelDRAW',
-      'Figma & Canva',
+      'Adobe InDesign',
       'Adobe Acrobat Pro',
+      'Figma',
+      'Canva',
       'After Effects (basic)',
     ],
-    'PREPRESS & PRINT QC': [
+    'PREPRESS & QC': [
+      'Print-ready artwork',
       'CMYK color separation',
-      'Pantone (PMS) spot color matching',
-      'Large-format preflight checks',
-      'TIFF & RIP software preparation',
-      'Bleed, crop & cut-path setup',
-      'Zero-reprint print QC signoff',
+      'Pantone color matching',
+      'Large-format preflight',
+      'TIFF production files',
+      'RIP-ready file setup',
+      'Print & cut registration',
+      'Zero-reprint QC signoff',
+    ],
+    'VEHICLE GRAPHICS & WRAPS': [
+      'Vehicle measurement',
+      'Vehicle branding artwork',
+      'Realistic client mockups',
+      'UAE RTA-compliant file prep',
+      'Vinyl media selection (Flat/Curved)',
+      'Full & partial wraps',
+      'Print & cut fleet workflow',
+    ],
+    'PRINT PRODUCTION': [
+      'Large-format digital printing',
+      'Flatbed printing equipment',
+      'Roll-to-roll printing',
+      'Epson Eco-Solvent printers',
+      'Lamination & finishing',
+      'Weeding & plot trimming',
+      'Print quality control',
+    ],
+    'CUTTING & FABRICATION': [
+      'Plotter cutting equipment',
+      'Vector cut paths',
+      'ACP/ACM panel preparation',
+      'CNC cutting tool-path prep',
+      'Fabrication-ready drawings',
     ],
   };
 
@@ -124,12 +125,12 @@ export default function Page() {
               Work
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
             </a>
-            <a href="#marketing-collateral" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
-              Marketing &amp; Collateral
+            <a href="#technical" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
+              Prepress
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
             </a>
             <a href="#vehicle-workflow" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
-              Fleet Branding
+              Vehicle Wrap Workflow
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-brand transition-all duration-250 group-hover:w-full" />
             </a>
             <a href="#experience" className="font-mono text-xs text-paper-dim hover:text-orange-brand tracking-widest uppercase transition-colors duration-200 relative group py-1">
@@ -180,18 +181,18 @@ export default function Page() {
               Work
             </a>
             <a
-              href="#marketing-collateral"
+              href="#technical"
               onClick={toggleMobileMenu}
               className="font-display text-2xl uppercase tracking-wider text-paper hover:text-orange-brand transition-colors"
             >
-              Marketing &amp; Collateral
+              Prepress
             </a>
             <a
               href="#vehicle-workflow"
               onClick={toggleMobileMenu}
               className="font-display text-2xl uppercase tracking-wider text-paper hover:text-orange-brand transition-colors"
             >
-              Fleet Branding
+              Vehicle Wrap Workflow
             </a>
             <a
               href="#experience"
@@ -229,21 +230,21 @@ export default function Page() {
               <span>D. Pawan Kumar · Senior Graphic Designer</span>
             </div>
             
-            {/* Main Title - Clean Graphic Designer Hierarchy */}
+            {/* Title - Clean, disciplined hierarchy */}
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.08] text-paper mb-4 uppercase">
-              Brand Identity, Advertising &amp; <br />
-              <span className="text-orange-brand neon-pulse-load">Visual Design Specialist</span>
+              Brand Design, Signage &amp; <br />
+              <span className="text-orange-brand neon-pulse-load">Print Production Specialist</span>
             </h1>
 
             {/* Target Location Status Pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-steel-1 border border-line text-xs font-mono text-paper mb-5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-              <span>Based in Dubai, UAE · Open to Corporate Graphic Designer Roles in UAE &amp; GCC</span>
+              <span>Based in Dubai, UAE · Open to UAE &amp; GCC Corporate Roles</span>
             </div>
 
             {/* Subtext */}
             <p className="text-paper-dim text-sm md:text-base max-w-xl leading-relaxed mb-6">
-              Over 7+ years of experience crafting high-impact brand identities, commercial marketing collateral, outdoor advertising campaigns, vehicle fleet branding, and AI-powered visual assets. Bridging creative vision with flawless print and production execution.
+              Over 7+ years of experience delivering brand identities, 50+ petroleum retail site rollouts for Indian Oil &amp; HPCL, zero-reprint prepress production, commercial fleet vehicle wraps, and modern AI workflows.
             </p>
 
             {/* Stats row - Compact & Clean */}
@@ -253,8 +254,8 @@ export default function Page() {
                 <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Years Exp.</div>
               </div>
               <div className="border border-line/50 bg-steel-1/60 p-3">
-                <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">100+</div>
-                <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Brand Projects</div>
+                <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">50+</div>
+                <div className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-0.5">Retail Sites</div>
               </div>
               <div className="border border-line/50 bg-steel-1/60 p-3">
                 <div className="font-display text-2xl md:text-3xl text-orange-brand neon-glow">30%</div>
@@ -272,7 +273,7 @@ export default function Page() {
                 href="#work"
                 className="bg-orange-brand text-ink px-6 py-3.5 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:bg-paper hover:text-ink hover:-translate-y-0.5"
               >
-                View Graphic Design Work
+                View Production Work
               </a>
               <a
                 href="/Pawan_Kumar_Resume.pdf"
@@ -360,7 +361,7 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Brand Identity, Collateral &amp; Commercial Design Portfolio" />
+      <DimensionLine label="Print, Signage &amp; Vehicle Graphics Portfolio" />
 
       {/* ============ SUMMARY STRIP (ABOUT) ============ */}
       <section className="bg-steel-1 py-20 px-[6vw]">
@@ -382,13 +383,13 @@ export default function Page() {
           {/* Description Paragraphs */}
           <div className="flex flex-col gap-4">
             <p className="text-paper text-sm md:text-base leading-relaxed font-semibold">
-              I am a Senior Graphic Designer passionate about crafting visual identities and marketing collateral that command attention in the real world.
+              I design for physical production and corporate brand integrity, taking jobs from first concept to error-free output.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-              With over 7 years of agency and corporate branding experience, I create comprehensive brand identity packages, corporate marketing collateral (brochures, sales flyers, roll-up banners, trade show displays), outdoor advertising campaigns, and commercial vehicle fleet wraps for prominent UAE businesses.
+              I am a Senior Graphic Designer with over seven years of specialized experience in brand design, outdoor advertising, retail signage systems, and vehicle branding. Having designed and rolled out brand identities for more than 50 Indian Oil and HPCL retail stations, I know how to navigate tight construction schedules, fabrication tolerances, and strict brand guidelines.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-              I combine mastery in Adobe Creative Cloud (Illustrator, Photoshop, InDesign) and CorelDRAW with next-generation generative AI workflows (Google Gemini, Google Flow/Veo, and ComfyUI) to deliver concept exploration, rapid storyboarding, and polished creative assets 30% faster without sacrificing brand integrity.
+              Most recently in Dubai, I designed and produced vehicle wraps and large-format graphics at Ash &amp; Sims, operating Epson eco-solvent printers and plotter cutters. To accelerate concept development, I integrate modern generative AI workflows (Google Gemini, Google Flow/Veo, and ComfyUI) for rapid visual research and storyboard prototyping.
             </p>
             <a
               href="/Pawan_Kumar_Resume.pdf"
@@ -414,7 +415,7 @@ export default function Page() {
               <span className="text-orange-brand font-semibold">📱 India Phone:</span> +91 93908 90890
             </div>
             <div>
-              <span className="text-orange-brand font-semibold">💼 Target Role:</span> Senior Graphic Designer (Corporate/Agency)
+              <span className="text-orange-brand font-semibold">💼 Target Role:</span> Senior Graphic Designer (Corporate)
             </div>
             <div>
               <span className="text-orange-brand font-semibold">🌐 Languages:</span> English · Telugu · Hindi
@@ -428,24 +429,24 @@ export default function Page() {
         {/* Capability Grid */}
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-12 pt-12 border-t border-line/30 select-none">
           <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
-            <span className="font-display text-2xl text-orange-brand">Brand Identity</span>
-            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Logos, Guidelines &amp; Stationery</span>
-          </div>
-          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
-            <span className="font-display text-2xl text-orange-brand">Marketing Print</span>
-            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Brochures, Banners &amp; POSM</span>
-          </div>
-          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
-            <span className="font-display text-2xl text-orange-brand">Fleet Wraps</span>
-            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Commercial Livery &amp; RTA Files</span>
+            <span className="font-display text-2xl text-orange-brand">7+ Yrs</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Branding &amp; Print Production</span>
           </div>
           <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
             <span className="font-display text-2xl text-orange-brand">AI Flow</span>
-            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Gemini, Veo &amp; ComfyUI Ideation</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Gemini, Veo &amp; ComfyUI</span>
           </div>
           <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
-            <span className="font-display text-2xl text-orange-brand">Prepress QC</span>
-            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Zero-Error Print Signoff</span>
+            <span className="font-display text-2xl text-orange-brand">50+ Sites</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Indian Oil &amp; HPCL Retail</span>
+          </div>
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">Fleet Wraps</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Vehicle Branding &amp; RTA Setup</span>
+          </div>
+          <div className="border border-line bg-ink/30 p-5 flex flex-col justify-between min-h-[110px]">
+            <span className="font-display text-2xl text-orange-brand">30% Faster</span>
+            <span className="font-mono text-[9px] text-paper-dim uppercase tracking-wider mt-2">Workflow Turnaround</span>
           </div>
         </div>
       </section>
@@ -455,7 +456,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-12 flex items-center gap-3">
             <span className="w-8 h-[1px] bg-orange-brand block" />
-            <span>Capability Sectors &amp; Trusted Brand Collaborations</span>
+            <span>Capability Sectors &amp; Trusted Brand Rollouts</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -464,19 +465,17 @@ export default function Page() {
               <span className="absolute top-2 right-4 font-mono text-[9px] text-orange-brand/35">// SECTOR.01</span>
               <div>
                 <h3 className="font-display text-sm text-orange-brand tracking-wide uppercase mb-3">
-                  Commercial Fleets &amp; Mobility
+                  Forecourt &amp; Fuel Retail
                 </h3>
                 <p className="text-paper-dim text-xs leading-relaxed mb-6">
-                  Complete fleet branding designs, realistic 3D client mockups, UAE RTA-compliant production files, and print-and-cut execution for delivery and corporate vehicle fleets across the UAE.
+                  Complete brand rollouts for 50+ petroleum retail sites: canopy fascias, illuminated pylons, monolith price displays, and forecourt POSM compliant with strict brand SOPs.
                 </p>
               </div>
-              <div className="flex flex-wrap items-center gap-3 border-t border-line/30 pt-5 font-display text-[9px] text-paper-dim uppercase tracking-wider">
-                <span className="border border-line px-2 py-0.5 text-paper">Floward</span>
-                <span className="border border-line px-2 py-0.5 text-paper">Libra Tech</span>
-                <span className="border border-line px-2 py-0.5 text-paper">Bath &amp; Bubbles</span>
-                <span className="border border-line px-2 py-0.5 text-paper">Greenly.ae</span>
-                <span className="border border-line px-2 py-0.5 text-paper">Golden Tower</span>
-                <span className="border border-line px-2 py-0.5 text-paper">Expat Group</span>
+              <div className="flex flex-wrap items-center gap-4 border-t border-line/30 pt-5">
+                <img src="/images/p19_indianoil_logo.jpg" alt="IndianOil" className="h-6 w-auto object-contain filter grayscale brightness-[2.2] contrast-[0.9] opacity-75 hover:opacity-100 hover:filter-none transition-all duration-300" />
+                <img src="/images/p19_hp_logo.jpg" alt="HPCL" className="h-6 w-auto object-contain filter grayscale brightness-[2.2] contrast-[0.9] opacity-75 hover:opacity-100 hover:filter-none transition-all duration-300" />
+                <img src="/images/p19_bpcl_logo.jpg" alt="Bharat Petroleum" className="h-6 w-auto object-contain filter grayscale brightness-[2.2] contrast-[0.9] opacity-75 hover:opacity-100 hover:filter-none transition-all duration-300" />
+                <span className="font-display text-[9px] text-paper-dim hover:text-paper tracking-wider uppercase font-semibold">SERVO</span>
               </div>
             </div>
 
@@ -485,10 +484,31 @@ export default function Page() {
               <span className="absolute top-2 right-4 font-mono text-[9px] text-orange-brand/35">// SECTOR.02</span>
               <div>
                 <h3 className="font-display text-sm text-orange-brand tracking-wide uppercase mb-3">
-                  Retail Showrooms &amp; Identity
+                  Commercial Fleet &amp; Vehicle Wraps
                 </h3>
                 <p className="text-paper-dim text-xs leading-relaxed mb-6">
-                  Facade identity designs, storefront backlit channel letters, 3D retail architectural graphics, and brand launch identity suites for prominent fashion, electrical, and commercial brands.
+                  Vehicle branding, realistic 3D client mockups, UAE RTA-compliant layouts, and print-and-cut file preparation for corporate and commercial fleets across the UAE.
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-3 border-t border-line/30 pt-5 font-display text-[9px] text-paper-dim uppercase tracking-wider">
+                <span className="border border-line px-2 py-0.5 text-paper">Libra Tech</span>
+                <span className="border border-line px-2 py-0.5 text-paper">Floward</span>
+                <span className="border border-line px-2 py-0.5 text-paper">Bath &amp; Bubbles</span>
+                <span className="border border-line px-2 py-0.5 text-paper">Greenly.ae</span>
+                <span className="border border-line px-2 py-0.5 text-paper">Golden Tower</span>
+                <span className="border border-line px-2 py-0.5 text-paper">Expat Group</span>
+              </div>
+            </div>
+
+            {/* Sector 3 */}
+            <div className="border border-line bg-steel-1/20 p-8 flex flex-col justify-between min-h-[260px] relative">
+              <span className="absolute top-2 right-4 font-mono text-[9px] text-orange-brand/35">// SECTOR.03</span>
+              <div>
+                <h3 className="font-display text-sm text-orange-brand tracking-wide uppercase mb-3">
+                  Showrooms, Retail &amp; Exhibitions
+                </h3>
+                <p className="text-paper-dim text-xs leading-relaxed mb-6">
+                  ACP cladding facade drawings, backlit 3D channel letters, trade show modular display backdrops, and exhibition graphics for leading apparel, electrical, and manufacturing brands.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-4 border-t border-line/30 pt-5">
@@ -502,25 +522,6 @@ export default function Page() {
                 <span className="font-display text-[9px] text-paper-dim hover:text-paper tracking-wider uppercase font-semibold">MINISTER WHITE</span>
               </div>
             </div>
-
-            {/* Sector 3 */}
-            <div className="border border-line bg-steel-1/20 p-8 flex flex-col justify-between min-h-[260px] relative">
-              <span className="absolute top-2 right-4 font-mono text-[9px] text-orange-brand/35">// SECTOR.03</span>
-              <div>
-                <h3 className="font-display text-sm text-orange-brand tracking-wide uppercase mb-3">
-                  Outdoor Campaigns &amp; Corporate Media
-                </h3>
-                <p className="text-paper-dim text-xs leading-relaxed mb-6">
-                  Large-format outdoor advertising hoardings, trade show exhibition kiosks, and multi-location corporate branding rollouts delivered to tight construction and event schedules.
-                </p>
-              </div>
-              <div className="flex flex-wrap items-center gap-4 border-t border-line/30 pt-5">
-                <img src="/images/p19_indianoil_logo.jpg" alt="IndianOil" className="h-6 w-auto object-contain filter grayscale brightness-[2.2] contrast-[0.9] opacity-75 hover:opacity-100 hover:filter-none transition-all duration-300" />
-                <img src="/images/p19_hp_logo.jpg" alt="HPCL" className="h-6 w-auto object-contain filter grayscale brightness-[2.2] contrast-[0.9] opacity-75 hover:opacity-100 hover:filter-none transition-all duration-300" />
-                <img src="/images/p19_bpcl_logo.jpg" alt="Bharat Petroleum" className="h-6 w-auto object-contain filter grayscale brightness-[2.2] contrast-[0.9] opacity-75 hover:opacity-100 hover:filter-none transition-all duration-300" />
-                <span className="font-display text-[9px] text-paper-dim hover:text-paper tracking-wider uppercase font-semibold">SERVO</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -529,13 +530,13 @@ export default function Page() {
       <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="work">
         <div className="mb-14 max-w-2xl">
           <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-            // 01 — SELECTED CREATIVE WORK
+            // 01 — SELECTED PRODUCTION WORK
           </div>
           <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-            Brand Identity, Collateral &amp; Fleet Graphics
+            Vehicle Wraps, Signage &amp; Prepress
           </h2>
           <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-            Explore a curated selection of commercial vehicle wraps, marketing collateral, trade show exhibition graphics, and retail brand designs.
+            Explore commercial vehicle branding projects, large-format outdoor signage, prepress technical sheets, and retail infrastructure systems.
           </p>
         </div>
 
@@ -544,92 +545,115 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Marketing Collateral &amp; Exhibition Design" />
+      <DimensionLine label="Prepress &amp; Technical Specifications" />
 
-      {/* ============ MARKETING COLLATERAL & EXHIBITION SECTION ============ */}
-      <section className="bg-steel-1 py-24 px-[6vw]" id="marketing-collateral">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-          <div>
+      {/* ============ TECHNICAL ARTWORK SHOWCASE ============ */}
+      <section className="bg-steel-1 py-24 px-[6vw]" id="technical">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14 max-w-2xl">
             <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-              // 02 — MARKETING &amp; EXHIBITION COLLATERAL
+              // 02 — PREPRESS &amp; PRODUCTION ARTWORK
             </div>
             <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-              Marketing Collateral &amp; Event Graphics
+              Prepress &amp; Technical Drawings
+            </h2>
+            <p className="text-paper-dim text-sm md:text-base leading-relaxed">
+              I translate client-approved layouts into detailed, production-ready signage and sheet arrangement plans. By calculating exact panel divisions (such as ACM fascia splits), sheet counts, and directional signage placements, I provide fabrication teams with clear, error-free manufacturing blueprints.
+            </p>
+          </div>
+
+          {/* Split display component */}
+          <TechShowcase />
+        </div>
+      </section>
+
+      {/* Divider */}
+      <DimensionLine label="Signage Fabrication &amp; CNC Production" />
+
+      {/* ============ SIGNAGE FABRICATION & CNC PRODUCTION SECTION ============ */}
+      <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="signage-fabrication">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
+          <div>
+            <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
+              // 03 — FABRICATION DESIGN
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
+              Signage Fabrication &amp; CNC Production
             </h2>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-6 font-semibold">
-              High-impact visual communication for events, sales, and retail.
+              Designing for fabrication — not just visualization.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-6">
-              From corporate sales brochures and product catalogs to trade show modular display backdrops, roll-up banner suites, and POSM materials, I design collateral that elevates brand perception and drives customer engagement.
+              Translating design concepts into fabrication-ready drawings and cut files. I specialize in preparing files for manufacturing, ensuring that all components align, fit, and are optimized for machine cutting, routing, and folding.
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs text-paper-dim list-none pl-0">
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Corporate brochures &amp; sales kits
+                ACP/ACM panel design &amp; layout
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Exhibition modular backdrops
+                Panel divisions &amp; splitting sheets
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Trade show roll-up banner suites
+                Fabrication-ready vector artwork
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Double-sided fabric flags &amp; signage
+                CNC cutting path &amp; tool-path prep
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Product catalogs &amp; flyers
+                Plotter vector cut paths &amp; registration
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                POSM &amp; retail merchandising assets
+                Lamination &amp; print protection specs
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Digital presentation slide decks
+                Print production scale calculations
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-1.5 h-1.5 bg-orange-brand shrink-0" />
-                Print-ready CMYK &amp; Pantone files
+                Zero-reprint verified packages
               </li>
             </ul>
           </div>
 
-          <div className="border border-line p-6 bg-ink flex flex-col gap-4 select-none">
+          <div className="border border-line p-6 bg-steel-1 flex flex-col gap-4 select-none">
             <h4 className="font-display text-paper text-xs uppercase tracking-wider mb-2 border-b border-line pb-2">
-              Concept to Print-Ready Execution
+              CNC Tool-Path Preparation
             </h4>
             <p className="font-sans text-xs text-paper-dim leading-relaxed">
-              Every marketing asset is engineered for flawless output: precise color separations, font licensing verification, high-resolution raster scaling, and substrate-appropriate bleeds to ensure colors and contrast pop across all mediums.
+              I prepare precise vector layouts for CNC routing of aluminum composite panels (ACP/ACM). This includes pocket routing paths for v-groove folds, contour cut paths, nesting parts to minimize sheet waste, and specifying tool offsets to match fabrication templates.
             </p>
-            <div className="bg-steel-1 p-4 border border-line flex flex-col gap-2 font-mono text-[10px] text-paper-dim">
-              <span className="text-orange-brand font-semibold">// PRODUCTION CHECKLIST</span>
-              <span>- Color Space: Pantone Matching System (PMS) &amp; CMYK</span>
-              <span>- Resolution: 300 DPI for offset &middot; Scaled vector for large-format</span>
-              <span>- Formats: High-Res Print PDF, TIFF, Vector EPS / AI</span>
+            <div className="bg-ink p-4 border border-line flex flex-col gap-2 font-mono text-[10px] text-paper-dim">
+              <span className="text-orange-brand font-semibold">// ROUTING SCHEMATICS</span>
+              <span>- 90&deg; V-Groove depth: 2.2mm (for folding)</span>
+              <span>- Nesting yield: optimized per 1220x2440mm sheet</span>
+              <span>- Cut path margins: 15mm bleed for wrap edges</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Commercial Fleet Branding Workflow" />
+      <DimensionLine label="Vehicle Graphics &amp; Print Production Workflow" />
 
       {/* ============ VEHICLE GRAPHICS WORKFLOW SECTION ============ */}
       <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="vehicle-workflow">
         <div className="mb-14 max-w-2xl">
           <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-            // 03 — FLEET BRANDING WORKFLOW
+            // 04 — VEHICLE GRAPHICS WORKFLOW
           </div>
           <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-            Commercial Fleet Branding Workflow
+            Vehicle Graphics &amp; Fleet Wrap Workflow
           </h2>
           <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-            From initial vehicle measurement and client mockups to UAE RTA approvals and print-and-cut execution — ensuring dimensionally accurate mobile brand visibility.
+            From initial vehicle measurement to the final vinyl wrap application — a systematic approach ensuring dimensionally accurate graphics and UAE RTA-compliant fleet branding.
           </p>
         </div>
 
@@ -637,15 +661,15 @@ export default function Page() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 relative select-none">
           {[
             { step: '01', title: 'Measurement', desc: 'Taking physical measurements of the vehicle to prepare accurate branding artwork.' },
-            { step: '02', title: 'Artwork', desc: 'Preparing vehicle branding artwork according to vehicle lines, curves, and brand guidelines.' },
-            { step: '03', title: '3D Mockup', desc: 'Creating realistic multi-angle vehicle mockups and presenting to the client for signoff.' },
-            { step: '04', title: 'RTA Approval', desc: 'Preparing vehicle branding artwork in accordance with UAE RTA guidelines and approval requirements.' },
-            { step: '05', title: 'Print & Cut Files', desc: 'Exporting TIFF files and vector paths with registration marks for plotter cutting.' },
+            { step: '02', title: 'Artwork', desc: 'Preparing vehicle branding artwork according to the vehicle dimensions and branding requirements.' },
+            { step: '03', title: 'Mockup', desc: 'Creating a realistic vehicle mockup and sharing it with the client for approval.' },
+            { step: '04', title: 'RTA Approval', desc: 'Preparing vehicle branding artwork in accordance with applicable UAE RTA guidelines and approval requirements.' },
+            { step: '05', title: 'Print & Cut Files', desc: 'Exporting TIFF files and vector paths with registration marks for cutting.' },
             { step: '06', title: 'RIP Prep', desc: 'Configuring files and sending RIP-ready layouts to the printing queue.' },
-            { step: '07', title: 'Epson Printing', desc: 'Supervising Epson Eco-Solvent digital printing equipment for vehicle graphics production.' },
+            { step: '07', title: 'Epson Printing', desc: 'Operating Epson Eco-Solvent printing equipment for vehicle graphics production.' },
             { step: '08', title: 'Plotter Cutting', desc: 'Preparing vector cut files and operating plotter cutting equipment for decals.' },
-            { step: '09', title: 'Finishing', desc: 'Weeding vinyl, trimming edges, and applying gloss or matte UV lamination.' },
-            { step: '10', title: 'Application', desc: 'Coordinating graphic installation with practical knowledge of cast and polymeric vinyl media.' }
+            { step: '09', title: 'Finishing', desc: 'Weeding vinyl, trimming edges, and applying gloss or matte lamination.' },
+            { step: '10', title: 'Vehicle Branding', desc: 'Applying graphics with practical knowledge of vinyl media for flat, semi-curved, and fully curved surfaces.' }
           ].map((item) => (
             <div key={item.step} className="border border-line bg-steel-1 p-5 flex flex-col justify-between min-h-[165px]">
               <div>
@@ -659,30 +683,80 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Prepress &amp; Production Artwork" />
+      <DimensionLine label="Print Production Experience" />
 
-      {/* ============ TECHNICAL ARTWORK SHOWCASE ============ */}
-      <section className="bg-steel-1 py-24 px-[6vw]" id="technical">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-14 max-w-2xl">
+      {/* ============ PRINT PRODUCTION EXPERIENCE SECTION ============ */}
+      <section className="bg-steel-1 py-20 px-[6vw]" id="production-experience">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-12 items-start">
+          <div>
             <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-              // 04 — PREPRESS &amp; TECHNICAL ACCURACY
+              // 05 — PRODUCTION CAPABILITY
             </div>
-            <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-              Prepress &amp; Production Technical Art
+            <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-6">
+              Print Production Experience
             </h2>
-            <p className="text-paper-dim text-sm md:text-base leading-relaxed">
-              Unlike designers who only create digital visuals, I specialize in translating approved brand layouts into exact production blueprints. By calculating panel splits, sheet counts, and cut paths, I guarantee zero-reprint execution for fabrication and print vendors.
-            </p>
+            
+            {/* Visual production workflow */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 font-mono text-[10px] md:text-xs text-paper mb-8 bg-ink border border-line p-4 w-fit select-none">
+              <span>Concept &amp; AI Explorations</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Preflight Checks</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>CMYK / Pantone Match</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Large Format Printing</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Finishing &amp; Plotter Cut</span>
+              <span className="text-orange-brand font-bold">&rarr;</span>
+              <span>Quality Control</span>
+            </div>
+
+            <div className="flex flex-col gap-4 text-paper-dim text-sm leading-relaxed">
+              <div className="border-l-2 border-orange-brand pl-4 py-1 mb-2">
+                <h4 className="font-display text-paper text-sm uppercase tracking-wider mb-1">
+                  Experienced Graphic Designer &amp; Print Operator
+                </h4>
+                <p className="font-mono text-xs text-orange-brand">Ash &amp; Sims Advertising LLC · Dubai, UAE (Jun 2026 – Nov 2026)</p>
+              </div>
+              <p>
+                In my role at Ash &amp; Sims, I managed the physical transition of files from digital layouts into premium physical prints. I handled prepress preparation, preflight checks, spot colors, and CMYK/Pantone matching to guarantee color consistency across substrates.
+              </p>
+              <p>
+                I operated our Epson eco-solvent printers and plotter cutting machinery, weeded vinyl graphics, and oversaw final finishing processes to deliver zero-error vehicle branding for the UAE market.
+              </p>
+            </div>
           </div>
 
-          {/* Split display component */}
-          <TechShowcase />
+          <div className="border border-line p-6 bg-ink flex flex-col gap-4 select-none">
+            <h4 className="font-display text-paper text-xs uppercase tracking-wider mb-2 border-b border-line pb-2">
+              Production Checkpoints
+            </h4>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Raster Image Processor (RIP) setup</span>
+              <span className="text-orange-brand font-semibold">100% Verified</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Epson Eco-Solvent &amp; Flatbed Equipment</span>
+              <span className="text-orange-brand font-semibold">Hands-on</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Vinyl Weed &amp; Edge Trimming</span>
+              <span className="text-orange-brand font-semibold">QC Overseen</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1 border-b border-line/30">
+              <span>Pantone / Spot Color Verification</span>
+              <span className="text-orange-brand font-semibold">Color Match</span>
+            </div>
+            <div className="flex justify-between items-center text-xs font-mono text-paper-dim py-1">
+              <span>ACM / ACP Cladding Sheet Splits</span>
+              <span className="text-orange-brand font-semibold">Scale Prep</span>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Divider */}
-      <DimensionLine label="Professional Experience &amp; Creative Skills" />
+      <DimensionLine label="Professional Experience &amp; Skills" />
 
       {/* ============ EXPERIENCE TIMELINE ============ */}
       <section className="py-24 px-[6vw] max-w-7xl mx-auto" id="experience">
@@ -692,18 +766,18 @@ export default function Page() {
           <div>
             <div className="mb-8">
               <div className="font-mono text-xs text-orange-brand tracking-widest uppercase mb-3 select-none">
-                // 05 — PROFESSIONAL CAREER
+                // 06 — PROFESSIONAL EXPERIENCE
               </div>
               <h2 className="font-display text-3xl md:text-5xl text-paper tracking-wide leading-tight mb-4">
-                Creative Experience<br />With Proven Results
+                Proven Track Record<br />In Brand &amp; Print
               </h2>
             </div>
             
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-6">
-              Over seven years of agency and corporate design experience taught me to balance creative flair with commercial deadlines and production feasibility.
+              <strong>I design for the physical world, not just the screen.</strong> More than seven years of delivering branding systems across petroleum retail networks and corporate commercial fleets taught me to think in fabrication tolerances, material durability, and installation constraints.
             </p>
             <p className="text-paper-dim text-sm md:text-base leading-relaxed mb-8">
-              Whether designing commercial vehicle fleets in Dubai or rolling out major brand collateral packages, I ensure that every design is visually striking, consistent with brand guidelines, and optimized for physical execution.
+              Every canopy, pylon, showroom fascia, and fleet wrap I have developed has had to withstand real-world site conditions, client guidelines, and vendor workflows.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -772,12 +846,12 @@ export default function Page() {
         </div>
         
         <h2 className="font-display text-3xl sm:text-5xl md:text-7xl text-paper tracking-tight leading-tight mb-6">
-          Let&apos;s create your next<br />
-          <span className="text-orange-brand">brand campaign.</span>
+          Let&apos;s build your next<br />
+          <span className="text-orange-brand">brand rollout.</span>
         </h2>
 
         <p className="text-paper-dim text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-12">
-          Based in Dubai, UAE | Looking for a Senior Graphic Designer role with a corporate company, agency, or brand house in the UAE or GCC. Open to discussing brand identity, marketing collateral, and fleet graphics projects.
+          Based in Dubai, UAE | Looking for a Senior Graphic Designer role with a corporate company in the UAE or GCC. Open to connecting on brand design, large-format print, and vehicle graphics projects.
         </p>
 
         {/* Contact Links */}
@@ -830,7 +904,7 @@ export default function Page() {
           © 2026 D. Pawan Kumar — Senior Graphic Designer
         </div>
         <div className="tracking-wider uppercase text-orange-brand/80">
-          Brand Identity &middot; Marketing Collateral &middot; Fleet Branding &middot; AI Visual Design
+          Brand Identity &middot; AI Concepting &middot; Prepress &middot; Vehicle Wraps &middot; Print Production
         </div>
       </footer>
     </div>

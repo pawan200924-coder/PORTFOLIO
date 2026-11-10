@@ -11,38 +11,37 @@ interface TimelineItem {
 const TIMELINE_ITEMS: TimelineItem[] = [
   {
     period: 'JUN 2026 — NOV 2026',
-    role: 'Senior Graphic Designer',
+    role: 'Graphic Designer & Print Machine Operator',
     company: 'Ash & Sims Advertising LLC — Dubai, UAE',
-    description: 'Spearheaded commercial vehicle branding, fleet identity systems, and large-format promotional graphics for leading UAE corporate clients. Created client-facing 3D mockups for approval, handled promotional video editing and content creation, prepared print-ready TIFF/RIP production files, and oversaw precision print-and-cut output on Epson eco-solvent equipment.',
+    description: 'Specialized in vehicle branding wraps and large-format print for the UAE market. Designed vehicle branding artwork and promotional graphics, preparing client-facing mockups for approval before production. Handled video editing and promotional content alongside design, prepared TIFF files for RIP software, and operated Epson Eco-Solvent printers and plotter cutters to produce precise print-and-cut graphics.',
     highlights: [
-      'Commercial fleet branding & vehicle wrap design (Floward, Libra Tech, Bath & Bubbles)',
-      'UAE RTA-compliant file preparation, client approvals & mockups',
-      'Video editing, promotional marketing content & storyboarding',
+      'Fleet & vehicle wraps (Epson Eco-Solvent & Plotter Cut)',
+      'UAE RTA-compliant file preparation & client mockups',
+      'TIFF & RIP software workflow management',
     ],
   },
   {
     period: 'OCT 2018 — MAY 2026',
     role: 'Senior Graphic Designer',
     company: 'Ambujam Advertising LLC — Hyderabad, India',
-    description: 'Led end-to-end creative design for outdoor advertising campaigns, marketing collateral suites, and retail brand identity rollouts. Developed comprehensive marketing materials including brochures, sales flyers, roll-up banners, exhibition booth displays, and POSM. Redesigned internal creative workflows, cutting turnaround time by 30% while maintaining a flawless zero-reprint track record across 50+ corporate locations.',
+    description: 'Spearheaded outdoor advertising, retail branding, signage, and large-format production. Designed complete brand and signage systems for 50+ Indian Oil and HPCL retail sites, spanning canopy fascia, monolith pylons, hoarding signage, and in-station POSM. Prepared print-ready artwork in CMYK and Pantone with material-specific settings for vinyl, ACM panels, flex banners, and backlit substrates.',
     highlights: [
-      'Marketing collateral suites: brochures, flyers, standees, exhibition displays & POSM',
-      'Brand & signage systems for 50+ Indian Oil and HPCL retail locations',
-      'Cut project turnaround time by 30% through restructured design & file workflows',
-      '6 years of zero major reprints via rigorous preflight & CMYK/Pantone color management',
+      '50+ retail site brand rollouts for Indian Oil & HPCL',
+      'Cut project turnaround time by 30% via workflow restructuring',
+      '6 years without a major reprint due to meticulous prepress & color management',
     ],
   },
   {
     period: 'FEB 2016 — OCT 2018',
-    role: 'Graphic & Web Designer (Freelance)',
-    company: 'Freelance — Brand Identity & Digital Media',
-    description: 'Designed complete brand identity packages, corporate logos, marketing brochures, and responsive WordPress websites for SME clients across retail, hospitality, and corporate services. Managed digital visual assets, social media graphics, and end-to-end client design briefs.',
+    role: 'Web Designer & Digital Marketing Specialist',
+    company: 'Freelance — Hyderabad, India',
+    description: 'Built responsive WordPress websites and brand identity collateral for SME clients in retail, hospitality, and corporate services. Executed SEO audits, on-page optimization, and managed end-to-end client lifecycles from initial creative briefs to delivery.',
   },
   {
     period: 'AUG 2009 — JAN 2016',
     role: 'Floor Sales In-Charge',
-    company: 'Mahalakshmi Enterprises (Airtel Franchise)',
-    description: 'Supervised retail operations, customer communication, and sales targets. Coordinated customer documentation, service requests, and team targets, building foundational skills in client relationship management and meeting tight deadlines.',
+    company: 'Mahalakshmi Enterprises (Airtel Franchise) — Hyderabad, India',
+    description: 'Led retail store operations, customer engagement, and sales targets. Coordinated customer enquiries, KYC documentation, and operational reporting, building strong communication and client-handling skills.',
   },
 ];
 

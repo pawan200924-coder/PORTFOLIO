@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import CornerFrame from './CornerFrame';
 
 interface Project {
   title: string;
@@ -19,14 +20,9 @@ interface Category {
 const CATEGORIES: Category[] = [
   {
     id: 't1',
-    name: 'Brand Identity & Fleet Graphics',
+    name: 'Vehicle Graphics & Wraps',
     isFeatureLayout: true,
     projects: [
-      {
-        title: 'Floral Line-Art Corporate Fleet Wrap',
-        tag: 'Floward · Suzuki Ertiga',
-        image: '/images/vehicle-branding/floward_suzuki_ertiga.jpg',
-      },
       {
         title: 'Full Commercial Van Wrap & Electrical Branding',
         tag: 'Libra Tech Services LLC · Peugeot Expert',
@@ -41,6 +37,11 @@ const CATEGORIES: Category[] = [
         title: 'Flower Delivery Commercial Fleet Wrap',
         tag: 'Floward · Renault Dokker',
         image: '/images/vehicle-branding/floward_renault_dokker.jpg',
+      },
+      {
+        title: 'Floral Line-Art Corporate Fleet Wrap',
+        tag: 'Floward · Suzuki Ertiga',
+        image: '/images/vehicle-branding/floward_suzuki_ertiga.jpg',
       },
       {
         title: 'Landscaping & Pool Services Vehicle Decals',
@@ -61,38 +62,37 @@ const CATEGORIES: Category[] = [
   },
   {
     id: 't2',
-    name: 'Marketing Collateral & Exhibition Graphics',
+    name: 'Print & Production',
     isFeatureLayout: true,
     projects: [
-      { title: 'Modular Display Backdrop & Graphics', tag: 'Trade Show · BD', image: '/images/p11_kiosk_bd.jpg' },
-      { title: 'Large-Format Exhibition Banner', tag: 'A-One Gold · Event Branding', image: '/images/p11_kiosk_aone.jpg' },
-      { title: 'Double-Sided Fabric Flag Print Suite', tag: 'SK Steel · Collateral', image: '/images/p11_kiosk1.jpg' },
-      { title: 'Trade Show Roll-Up Banner Set', tag: 'Expo Campaign Collateral', image: '/images/p11_kiosk3.jpg' },
-      { title: 'Retail Print Graphics & POSM', tag: 'Steel Tech · Merchandising', image: '/images/p11_kiosk2.jpg' },
+      { title: 'Large-Format Exhibition Banner', tag: 'A-One Gold', image: '/images/p11_kiosk_aone.jpg' },
+      { title: 'Double-Sided Fabric Flag Print', tag: 'SK Steel', image: '/images/p11_kiosk1.jpg' },
+      { title: 'Modular Display Backdrop & Graphics', tag: 'BD', image: '/images/p11_kiosk_bd.jpg' },
+      { title: 'Trade Show Roll-Up Banner Set', tag: 'Expo', image: '/images/p11_kiosk3.jpg' },
+      { title: 'Retail Print Graphics & Signage', tag: 'Steel Tech', image: '/images/p11_kiosk2.jpg' },
     ],
   },
   {
     id: 't3',
-    name: 'Commercial Storefronts & Signage',
+    name: 'Signage & Large Format',
     isFeatureLayout: true,
     projects: [
-      { title: 'Showroom Fascia & Facade Identity', tag: 'IBO Wholesale · Retail Facade', image: '/images/p9_ibo_fascia.jpg' },
-      { title: 'Storefront Backlit Channel Letter Signage', tag: 'Raymond · Storefront', image: '/images/p9_raymond.jpg' },
-      { title: 'Gallery Storefront Brand Identity', tag: 'Havells · Retail Gallery', image: '/images/p9_havells.jpg' },
-      { title: 'Retail Storefront Fascia Signage', tag: 'Linen Club · Retail Rollout', image: '/images/p9_linenclub.jpg' },
-      { title: 'Showroom Launch Branding & Graphics', tag: 'Lloyd / Havells · Brand Launch', image: '/images/p9_lloyd.jpg' },
+      { title: 'Illuminated Canopy Fascia', tag: 'Nayara Energy', image: '/images/p4_nayara_canopy.jpg' },
+      { title: 'Road Safety & Civic Signage', tag: 'Civic', image: '/images/p7_traffic1.jpg' },
+      { title: 'Directional Road Sign', tag: 'Wayfinding', image: '/images/p7_traffic2.jpg' },
+      { title: 'Lane Direction Signage', tag: 'Highway', image: '/images/p7_traffic3.jpg' },
     ],
   },
   {
     id: 't4',
-    name: 'Outdoor Advertising & Brand Systems',
+    name: 'Retail & Branding',
     isFeatureLayout: true,
     projects: [
-      { title: 'Illuminated Retail Pylon & Price Display', tag: 'HP · High Mast Signage', image: '/images/p5_unipole_hp.jpg' },
-      { title: 'LED Monolith Corporate Signage Range', tag: 'IndianOil / HP · SOP Specs', image: '/images/p5_monolith_hero.jpg' },
-      { title: 'Illuminated Architectural Canopy Fascia', tag: 'Nayara Energy · 50+ Sites', image: '/images/p4_nayara_canopy.jpg' },
-      { title: 'High Mast Corporate Signage Installation', tag: 'Nayara · Outdoor Media', image: '/images/p5_unipole_nayara_install.jpg' },
-      { title: 'Civic Wayfinding & Directional Signage System', tag: 'Civic Infrastructure', image: '/images/p7_traffic1.jpg' },
+      { title: 'Showroom Fascia & ACP Cladding', tag: 'IBO Wholesale', image: '/images/p9_ibo_fascia.jpg' },
+      { title: 'Storefront Backlit Signage', tag: 'Raymond', image: '/images/p9_raymond.jpg' },
+      { title: 'Gallery Storefront Identity', tag: 'Havells', image: '/images/p9_havells.jpg' },
+      { title: 'Retail Fascia Signage', tag: 'Linen Club', image: '/images/p9_linenclub.jpg' },
+      { title: 'Showroom Launch Branding', tag: 'Lloyd / Havells', image: '/images/p9_lloyd.jpg' },
     ],
   },
   {
@@ -100,9 +100,21 @@ const CATEGORIES: Category[] = [
     name: 'Prepress & Production Artwork',
     isFeatureLayout: false,
     projects: [
-      { title: 'SWAGAT Fascia ACM Division Sheet', tag: 'Prepress / Bleed / Panel Splits', image: '/images/tech_swagat_fascia_layout.jpg' },
-      { title: 'IOCL Signage Bay 3D Setup', tag: '3D Spatial Modeling & Verification', image: '/images/tech_iocl_bay_3d.jpg' },
-      { title: 'Mobile Stop Sign Fabrication Layout', tag: 'Production-ready Vector Drawings', image: '/images/tech_stop_sign_3d.jpg' },
+      { title: 'SWAGAT Fascia ACM Division Sheet', tag: 'Prepress / Panel Splits', image: '/images/tech_swagat_fascia_layout.jpg' },
+      { title: 'IOCL Signage Bay 3D Setup', tag: '3D Layout Verification', image: '/images/tech_iocl_bay_3d.jpg' },
+      { title: 'Mobile Stop Sign Fabrication Layout', tag: 'Production-ready DWG', image: '/images/tech_stop_sign_3d.jpg' },
+    ],
+  },
+  {
+    id: 't6',
+    name: 'Specialist / Forecourt Branding',
+    isFeatureLayout: true,
+    projects: [
+      { title: 'LED Monolith Signage Range', tag: 'IndianOil / HP', image: '/images/p5_monolith_hero.jpg' },
+      { title: 'Illuminated Unipole Price Display', tag: 'HP', image: '/images/p5_unipole_hp.jpg' },
+      { title: 'High Mast Unipole Installation', tag: 'Nayara', image: '/images/p5_unipole_nayara_install.jpg' },
+      { title: 'Unipole Price Display', tag: 'IndianOil', image: '/images/p5_unipole_iocl.jpg' },
+      { title: 'Brand Colour Canopy System', tag: 'IndianOil', image: '/images/p4_iocl_orange.jpg' },
     ],
   },
 ];
